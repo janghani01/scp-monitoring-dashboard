@@ -770,65 +770,18 @@ body.dark-mode #newRoutineTimeModal, body.dark-mode #newRoutineInputModal, body.
             </div>
             <div class="table-container">
                 <table id="serverTable">
-                    <thead>
-                        <tr>
-                            <th style="width: 40px;"><input type="checkbox" onclick="toggleAll(this)"></th>
-                            <th>서버명 (클릭시 자원 조회)</th>
-                            <th>유형</th>
-                            <th>IP 주소</th>
-                            <th>🛡️ 방화벽(SG)</th>
-                            <th>상태</th>
-                            <th>vCPU</th>
-                            <th>메모리(GB)</th>
-                            <th>운영체제</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th style="width: 40px;"><input type="checkbox" onclick="toggleAll(this)"></th><th>서버명 (클릭시 자원 조회)</th><th>유형</th><th>IP 주소</th><th>상태</th><th>vCPU</th><th>메모리(GB)</th><th>운영체제</th></tr></thead>
                     <tbody>
                         <?php
                         if(isset($serverData['servers'])){
                             foreach($serverData['servers'] as $server){
-                                $ip = $server['addresses'][0]['ip_addresses'][0]['ip_address'] ?? ''; 
-                                $type='VM';
+                                $ip = $server['addresses'][0]['ip_addresses'][0]['ip_address'] ?? ''; $type='VM';
                                 if(strpos(strtolower($server['server_type']['name'] ?? ''),'gpu')!==false) $type='GPU';
-                                
-                                $os = $osInfo[$ip]['os'] ?? '-'; 
-                                $osClass=''; 
-                                $osFilter='OTHER';
-                                if(stripos($os,'Rocky')!==false){ $osClass='os-rocky'; $osFilter='Rocky'; } 
-                                elseif(stripos($os,'Ubuntu')!==false){ $osClass='os-ubuntu'; $osFilter='Ubuntu'; } 
-                                elseif(stripos($os,'Windows')!==false){ $osClass='os-win'; $osFilter='Windows'; } 
-                                elseif($os=='UNREACHABLE' || $os=='접속불가'){ $os='접속불가'; $osClass='os-unreachable'; $osFilter='UNREACHABLE'; }
-                                
-                                $status = $server['state'] ?? '-'; 
-                                $statusClass = ($status=='ACTIVE') ? 'status-active' : 'status-error'; 
-                                $disabled = ($os === '접속불가' || $ip === '') ? 'disabled' : '';
+                                $os = $osInfo[$ip]['os'] ?? '-'; $osClass=''; $osFilter='OTHER';
+                                if(stripos($os,'Rocky')!==false){ $osClass='os-rocky'; $osFilter='Rocky'; } elseif(stripos($os,'Ubuntu')!==false){ $osClass='os-ubuntu'; $osFilter='Ubuntu'; } elseif(stripos($os,'Windows')!==false){ $osClass='os-win'; $osFilter='Windows'; } elseif($os=='UNREACHABLE' || $os=='접속불가'){ $os='접속불가'; $osClass='os-unreachable'; $osFilter='UNREACHABLE'; }
+                                $status = $server['state'] ?? '-'; $statusClass = ($status=='ACTIVE') ? 'status-active' : 'status-error'; $disabled = ($os === '접속불가' || $ip === '') ? 'disabled' : '';
                                 $serverName = htmlspecialchars($server['name'] ?? '-');
-
-                                // 💡 방화벽(SG) 파싱 로직 추가
-                                $sgList = [];
-                                if (isset($server['security_groups']) && is_array($server['security_groups'])) {
-                                    foreach ($server['security_groups'] as $sg) {
-                                        $sgName = $sg['security_group_name'] ?? $sg['name'] ?? $sg['id'] ?? '';
-                                        if ($sgName) $sgList[] = htmlspecialchars($sgName);
-                                    }
-                                } elseif (isset($server['securityGroupIds']) && is_array($server['securityGroupIds'])) {
-                                    foreach ($server['securityGroupIds'] as $sgId) {
-                                        $sgList[] = htmlspecialchars($sgId);
-                                    }
-                                }
-                                $sgDisplay = empty($sgList) ? '<span style="color:#94a3b8; font-size:11px;">미할당</span>' : implode('<br>', $sgList);
-
-                                echo "<tr data-type='{$type}' data-os='{$osFilter}'>
-                                        <td><input type='checkbox' class='ip-checkbox' value='{$ip}' {$disabled}></td>
-                                        <td><span class='server-link' onclick=\"openServerMetrics('{$serverName}', '{$ip}', '{$os}')\">{$serverName}</span></td>
-                                        <td>{$type}</td>
-                                        <td>{$ip}</td>
-                                        <td style='font-size: 12px; color: #475569; font-weight: bold;'>{$sgDisplay}</td>
-                                        <td class='{$statusClass}'>" . ($status=='ACTIVE'?'운영중':$status) . "</td>
-                                        <td>{$server['server_type']['vcpus']} Core</td>
-                                        <td>{$server['server_type']['ram']} GB</td>
-                                        <td class='{$osClass}'>{$os}</td>
-                                      </tr>";
+                                echo "<tr data-type='{$type}' data-os='{$osFilter}'><td><input type='checkbox' class='ip-checkbox' value='{$ip}' {$disabled}></td><td><span class='server-link' onclick=\"openServerMetrics('{$serverName}', '{$ip}', '{$os}')\">{$serverName}</span></td><td>{$type}</td><td>{$ip}</td><td class='{$statusClass}'>" . ($status=='ACTIVE'?'운영중':$status) . "</td><td>{$server['server_type']['vcpus']} Core</td><td>{$server['server_type']['ram']} GB</td><td class='{$osClass}'>{$os}</td></tr>";
                             }
                         }
                         ?>
@@ -1947,19 +1900,18 @@ function exportServerExcel() {
         });
     }
     if (rowsToExport.length === 0) return alert("다운로드할 데이터가 없습니다.");
-    let csv = "서버명,유형,IP 주소,방화벽(SG),상태,vCPU,메모리(GB),운영체제\n";
+    let csv = "서버명,유형,IP 주소,상태,vCPU,메모리(GB),운영체제\n";
     rowsToExport.forEach(row => {
         const c = row.querySelectorAll('td');
-        if(c.length >= 9) { // 💡 컬럼 추가(SG)로 인한 배열 인덱스 1칸씩 이동
-            let col1 = c[1].innerText.replace(/"/g, '""'); // 서버명
-            let col2 = c[2].innerText.replace(/"/g, '""'); // 유형
-            let col3 = c[3].innerText.replace(/"/g, '""'); // IP 주소
-            let col4 = c[4].innerText.replace(/"/g, '""').replace(/\n/g, ' / '); // 🛡️ 방화벽(SG) 줄바꿈을 엑셀용 슬래시로 변경
-            let col5 = c[5].innerText.replace(/"/g, '""'); // 상태
-            let col6 = c[6].innerText.replace(/"/g, '""'); // vCPU
-            let col7 = c[7].innerText.replace(/"/g, '""'); // RAM
-            let col8 = c[8].innerText.replace(/"/g, '""'); // OS
-            csv += `"${col1}","${col2}","${col3}","${col4}","${col5}","${col6}","${col7}","${col8}"\n`;
+        if(c.length >= 8) {
+            let col1 = c[1].innerText.replace(/"/g, '""');
+            let col2 = c[2].innerText.replace(/"/g, '""');
+            let col3 = c[3].innerText.replace(/"/g, '""');
+            let col4 = c[4].innerText.replace(/"/g, '""');
+            let col5 = c[5].innerText.replace(/"/g, '""');
+            let col6 = c[6].innerText.replace(/"/g, '""');
+            let col7 = c[7].innerText.replace(/"/g, '""');
+            csv += `"${col1}","${col2}","${col3}","${col4}","${col5}","${col6}","${col7}"\n`;
         }
     });
     downloadCsv(csv, `SCP_Server_List_${new Date().toISOString().slice(0,10)}.csv`);

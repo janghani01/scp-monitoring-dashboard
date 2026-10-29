@@ -1,25 +1,21 @@
 <?php
 
-$json = file_get_contents('/opt/scp/servers.json');
-$data = json_decode($json, true);
-
-if (!$data || !isset($data['servers'])) {
-    die("API ERROR");
-}
-
 header('Content-Type: text/csv; charset=utf-8');
-header('Content-Disposition: attachment; filename=server_list.csv');
+header('Content-Disposition: attachment; filename=servers.csv');
 
-$out = fopen('php://output', 'w');
+$fp = fopen('php://output', 'w');
 
-fputcsv($out, [
+fputcsv($fp, [
     'Server Name',
-    'IP Address',
+    'IP',
     'State',
     'vCPU',
-    'RAM(GB)',
-    'Created At'
+    'RAM'
 ]);
+
+$json = file_get_contents('/opt/scp/servers.json');
+
+$data = json_decode($json, true);
 
 foreach ($data['servers'] as $server) {
 
@@ -29,15 +25,14 @@ foreach ($data['servers'] as $server) {
         $ip = $server['addresses'][0]['ip_addresses'][0]['ip_address'];
     }
 
-    fputcsv($out, [
-        $server['name'] ?? '',
+    fputcsv($fp, [
+        $server['name'],
         $ip,
-        $server['state'] ?? '',
-        $server['server_type']['vcpus'] ?? '',
-        $server['server_type']['ram'] ?? '',
-        $server['created_at'] ?? ''
+        $server['state'],
+        $server['server_type']['vcpus'],
+        $server['server_type']['ram']
     ]);
 }
 
-fclose($out);
+fclose($fp);
 ?>

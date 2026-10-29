@@ -1,0 +1,437 @@
+{
+  "172.16.118.9": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.57": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.152": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.151": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.142": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.141": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.32": {
+    "os": "Rocky Linux"
+  },
+  "172.16.121.31": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.31": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.98": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.16": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.41": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.63": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.5": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.80": {
+    "os": "Rocky Linux"
+  },
+  "172.16.106.87": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.25": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.32": {
+    "os": "Windows"
+  },
+  "172.16.118.8": {
+    "os": "Windows"
+  },
+  "172.16.118.21": {
+    "os": "Windows"
+  },
+  "172.16.99.35": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.97": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.108": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.77": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.122": {
+    "os": "Rocky Linux"
+  },
+  "172.16.99.73": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.25": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.147": {
+    "os": "Rocky Linux"
+  },
+  "172.16.105.152": {
+    "os": "Rocky Linux"
+  },
+  "172.16.98.205": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.15": {
+    "os": "Windows"
+  },
+  "172.16.118.35": {
+    "os": "Windows"
+  },
+  "172.16.118.99": {
+    "os": "Windows"
+  },
+  "172.16.118.20": {
+    "os": "Windows"
+  },
+  "172.16.118.29": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.67": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.9": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.252": {
+    "os": "Rocky Linux"
+  },
+  "172.16.104.94": {
+    "os": "Rocky Linux"
+  },
+  "172.16.104.20": {
+    "os": "Rocky Linux"
+  },
+  "172.16.104.209": {
+    "os": "Rocky Linux"
+  },
+  "172.16.104.172": {
+    "os": "Rocky Linux"
+  },
+  "172.16.98.200": {
+    "os": "Rocky Linux"
+  },
+  "172.16.99.169": {
+    "os": "Rocky Linux"
+  },
+  "172.16.98.203": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.164": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.3": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.7": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.23": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.167": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.81": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.188": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.239": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.64": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.4": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.152": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.196": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.212": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.107": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.100": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.8": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.32": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.87": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.198": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.255": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.147": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.78": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.177": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.69": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.74": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.102": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.54": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.195": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.219": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.240": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.67": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.80": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.195": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.182": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.131": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.88": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.73": {
+    "os": "Rocky Linux"
+  },
+  "172.16.116.147": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.107": {
+    "os": "Windows"
+  },
+  "172.16.97.244": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.2": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.110": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.136": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.148": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.66": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.144": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.3": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.190": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.107": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.29": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.205": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.16": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.171": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.21": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.89": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.183": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.200": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.152": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.31": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.192": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.224": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.206": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.14": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.47": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.138": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.92": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.42": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.167": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.140": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.226": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.133": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.115": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.142": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.120": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.19": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.229": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.142": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.159": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.222": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.180": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.84": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.62": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.118": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.90": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.208": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.20": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.180": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.254": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.82": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.77": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.181": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.61": {
+    "os": "Rocky Linux"
+  },
+  "172.16.96.105": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.91": {
+    "os": "Rocky Linux"
+  },
+  "172.16.97.214": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.113": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.69": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.64": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.62": {
+    "os": "Rocky Linux"
+  },
+  "172.16.118.10": {
+    "os": "Rocky Linux"
+  }
+}

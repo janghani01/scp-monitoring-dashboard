@@ -1,0 +1,2502 @@
+[
+    {
+        "id": "7636cd05d87845f4a25d454238cd9e12",
+        "created_at": "2025-09-22T08:02:30.114613Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 0,
+        "modified_at": "2025-09-22T08:02:31.353725Z",
+        "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "name": "btvesb-msg-lb",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.7",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "89b1245e580e4f218139abb456b79b6d",
+        "created_at": "2025-09-12T12:42:22.268832Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T12:42:23.410292Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_kube-system_coredns",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.170",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "75102e5b2c3b4f7fadb75bb010eb4cbb",
+        "created_at": "2025-09-15T08:13:16.374575Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-09-15T08:13:17.928381Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_kube-system_masterdns",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.5",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "8251e7667e7a49b6bc8232d7113c9d50",
+        "created_at": "2025-09-22T07:36:56.822502Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T07:36:57.992217Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-athenz-ui",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.192",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "291781220203444f92d8625fb619cf05",
+        "created_at": "2025-09-22T07:37:17.454697Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T07:37:19.988737Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-athenz-zms",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.116",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "aee924fecc26432abb6d9d1ba936547f",
+        "created_at": "2025-09-22T07:37:38.730428Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T07:37:39.882943Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-athenz-zts",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.119",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "4f5bf4392d124f91a8b55f6b1e5eeba7",
+        "created_at": "2025-09-22T07:37:59.846096Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T07:38:00.941000Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-iam-api",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.189",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "73249785f39f48848b839bbe97fc28b5",
+        "created_at": "2025-09-22T07:38:34.515804Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T07:38:35.725652Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-kratos-nginx",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.17",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "44bfee11be674e92a2609b55c0af6b3e",
+        "created_at": "2025-09-22T07:39:09.033840Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T07:39:11.161307Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-login",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.100",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "6b4e8edc71864f938d70424e7a2183d2",
+        "created_at": "2025-09-22T07:39:31.230554Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T07:39:33.259108Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-otoken",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.20",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0919b4b8a8914644bb8a98c7cb870e60",
+        "created_at": "2025-09-22T07:39:52.261214Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T07:39:55.224959Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-project-controller",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.160",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "58b1a1e08f1d4706a22482a3077c2c4f",
+        "created_at": "2025-09-22T07:40:22.693596Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T07:40:23.881061Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-auth_n3r-iam-project-info",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.141",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "50c885e4acbf4602bdb460d9ab44a2cf",
+        "created_at": "2025-09-16T09:39:53.918628Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-16T09:39:56.194004Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-ad_jenkins-ppp-dev-dev",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.14",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "7b69fe5331df4eeeb767ccdce4226187",
+        "created_at": "2025-09-23T02:29:41.148351Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-23T02:29:42.445629Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-cert-signe-c8b8b4e820ec9433",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.86",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "95f38f7978a8406f85321a602ccc7173",
+        "created_at": "2025-09-15T08:29:59.522070Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-15T08:30:01.235053Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-elb_elb-jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.152",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "7d9bb4da5a954aa195fdd35e3f68496d",
+        "created_at": "2026-05-19T08:05:17.054558Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-05-19T08:05:31.600747Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-ext-authz_ext-authz-dev",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.247",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ffe16a80fee24cf9bce9ca25de43ebc7",
+        "created_at": "2025-09-19T00:50:07.174882Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-19T00:50:08.489178Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-grafana_jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.74",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "70463504f4104b52802d7dcca212aa4a",
+        "created_at": "2025-09-18T07:42:28.343527Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-18T07:42:29.580672Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-ingress_ingress-api-ppp-dev",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.223",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "e9c953ea83e841389353842f6964b0b8",
+        "created_at": "2025-09-22T04:47:25.921626Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T04:47:27.444671Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-ingress_jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.82",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "df5d63361d1d4cc1af1c77f819e936f8",
+        "created_at": "2025-10-15T02:15:29.004965Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-10-15T02:15:30.226098Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-kafka_jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.238",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "8bfcc31046214167a60b09ee9ced6104",
+        "created_at": "2026-03-12T06:57:37.431656Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-03-12T06:57:45.373882Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-platform-opensearch_jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.177",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5ef9464e412d42e1a38978f6f5a9587a",
+        "created_at": "2026-03-20T00:31:06.683692Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-03-20T00:31:15.294410Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-project-co_h1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.40",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "bef5ffd44ff64da59d3173ff59a375f5",
+        "created_at": "2025-09-25T23:07:46.347302Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-25T23:07:47.997364Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_cluster-web",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.209",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "f84c005350b54ab4bfe62217f2387218",
+        "created_at": "2025-09-15T07:42:05.378078Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-15T07:42:06.794374Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_elb-jenkins",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.8",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "fb2163eddb3b4b779ed63825e6d2151d",
+        "created_at": "2025-09-15T07:49:04.010499Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-15T07:49:05.073591Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_lobster-global-query",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.108",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0200658aaecc443986a43dd1fbdcd8ca",
+        "created_at": "2025-09-15T07:48:32.105025Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-15T07:48:33.281436Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_lobster-operator",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.13",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "f1f046359893438aadbec9cc760a0fed",
+        "created_at": "2025-09-15T07:48:12.558336Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-15T07:48:13.849902Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_lobster-query",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.80",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5aa72ab0e4044fbbbeefc518fdff7913",
+        "created_at": "2025-09-19T06:52:15.528497Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T06:52:16.732988Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_monitor",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.205",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "50dd617dd82b4f9980729dd78e5c598b",
+        "created_at": "2025-09-19T06:52:35.450453Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T06:52:36.613140Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_monitor-proxy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.168",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "1cc83093aafd4c6da0f66e60c9a7ccff",
+        "created_at": "2025-09-17T06:49:13.004134Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-17T06:49:13.998850Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_n3r-hpa",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.36",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "2529c2212b3b4891adfcf94745bf62dd",
+        "created_at": "2025-09-17T06:48:36.591207Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-17T06:48:38.330512Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_n3r-hpa-exporter",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.104",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "6c671bf9db7940e6820a1b870603afa2",
+        "created_at": "2025-09-17T06:48:55.195142Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-17T06:48:56.250781Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_n3r-hpa-validating-webhook",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.50",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3e189f6ebfcf46a6b25a807f07ef333f",
+        "created_at": "2025-09-22T01:26:33.759579Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-22T01:26:34.905892Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_n3r-k8s",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.157",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "c88ea263962f46f29812009e77450a13",
+        "created_at": "2025-09-12T12:44:27.204820Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T12:44:28.465007Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_n3r-k8s-server",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.38",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5692e1cad2cd4e45ba5d7fe1e4e4c706",
+        "created_at": "2025-09-12T12:45:50.971722Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T12:45:52.116153Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_node-auto-repair",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.10",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "d157cba9123a44c0a81be136d7c766ee",
+        "created_at": "2025-09-19T08:50:32.286665Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T08:50:33.472356Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_promxy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.30",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ec8d82a84d614cc5944fa8aee4c25e0e",
+        "created_at": "2025-09-17T06:49:31.052066Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-17T06:49:32.326484Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddadm1_n3r-system_promxy-n3rhpa",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.52",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "58c14174006841a48ad7741fa93fb12b",
+        "created_at": "2026-01-28T09:27:03.364282Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-28T09:27:13.955691Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-103e89b6afbd1175",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.125",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0548a9954e864a2d92b6f9cbdf6d743f",
+        "created_at": "2025-09-20T12:47:18.300537Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-20T12:47:19.532765Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-2ef382506672b328",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.149",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "8375cfac40a34f5798500b0ec43fb621",
+        "created_at": "2026-01-28T09:23:36.586887Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-28T09:23:53.105525Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-35543dc86ef38f7b",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.114",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "9596c5cc52ac4df5bf21caa6a926a053",
+        "created_at": "2026-01-29T01:08:07.162119Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-29T01:08:21.831173Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-445a9bf2149323ee",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.135",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "421e4a37dc994ef6b5a079d932fda902",
+        "created_at": "2026-01-28T09:26:29.758648Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-28T09:26:42.241345Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-96e00bd133a698ba",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.255",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ae3b7e635e6c44bdbf8cd8cf1254c94f",
+        "created_at": "2026-01-28T09:27:36.692217Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-28T09:27:51.439774Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-cc45cfc038b0522c",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.128",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ad92af35ef1845fe89df44bbe706ae45",
+        "created_at": "2026-01-29T01:07:33.889916Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-29T01:07:45.596222Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system-fc3dcde9f07c18af",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.148",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "e169b310aa9e43338c756f3a10fbec75",
+        "created_at": "2025-09-20T12:46:55.645951Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-20T12:46:57.125519Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_elb-apiserver-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.136",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "f6a12726133b42ed8ba4cd763cb9014f",
+        "created_at": "2025-09-18T10:26:17.622747Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 4,
+        "modified_at": "2025-09-18T10:26:19.263876Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_elb-powerdns-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.117",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "38262af46d9f4364851c1ffbdf1d3f12",
+        "created_at": "2025-09-19T09:11:26.591569Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-09-19T09:11:27.824280Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway0",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.80",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "270dd76e1c7c43c5bf2d090b4869d4e3",
+        "created_at": "2025-09-19T09:10:40.003440Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-09-19T09:10:41.296424Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.81",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "09e505c7e19e4eba9c2aeb41989cb016",
+        "created_at": "2025-09-19T09:12:11.537601Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-09-19T09:12:12.832374Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway2",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.82",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "f56af6287c5141ca94161fa1fbe05007",
+        "created_at": "2026-01-22T09:13:40.943710Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2026-01-22T09:13:49.752152Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway3",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.107",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "fb25033439774e909183777a7fe384a9",
+        "created_at": "2026-03-03T05:52:28.789706Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2026-03-03T05:52:37.499302Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway4",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.98",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a4fbf078144a4851a227241cc96e2633",
+        "created_at": "2026-03-03T05:53:12.050139Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2026-03-03T05:53:21.215812Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway5",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.119",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "7e73d2e8f45b440a9448ba53672e8e42",
+        "created_at": "2026-03-03T05:53:53.251449Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2026-03-03T05:54:05.841216Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway6",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.173",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a09400fdaa384316b41398aaf5d1fdff",
+        "created_at": "2026-07-16T07:23:38.629679Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2026-07-16T07:23:53.217105Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_istio-ingressgateway-gateway7",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.59",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "4b4fb4d3b95246288928b4b8c942f53a",
+        "created_at": "2025-09-22T05:23:20.075072Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T05:23:22.353444Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_elb-system_nginx-simple-service",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.204",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "df012ba753064c098d0b9d36077ca980",
+        "created_at": "2025-09-12T05:32:46.314472Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T05:32:47.532854Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_kube-system_coredns",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.8",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "e2cf2892597c4af790080f469afba485",
+        "created_at": "2025-09-15T08:14:25.626400Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-09-15T08:14:26.986427Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_kube-system_masterdns",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.70",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "6102c8141f024cd697cea87631c790b2",
+        "created_at": "2026-03-11T02:40:36.373337Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-03-11T02:40:44.274066Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-mct_client",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.227",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ebbc431324be48e9b45cd9e095530a86",
+        "created_at": "2025-10-28T08:37:14.894076Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-10-28T08:37:22.468211Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-ns-kr8-beta-msg-sea-1b5d89e9e3d01764",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.54",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "bc99b5459b31470abeb069ba8534a692",
+        "created_at": "2025-11-05T08:10:44.220500Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-11-05T08:10:53.439846Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-ns-kr8-beta-msg-sea-8b2c2654c4471650",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.8",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5db1bdd108104bc38e08aa242141a7bc",
+        "created_at": "2025-09-21T15:23:54.000348Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-21T15:23:56.160473Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-ad_argo-server",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.239",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0d7454e0d6014d629a50dfc1b5e61efb",
+        "created_at": "2026-01-23T07:59:22.598093Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-01-23T07:59:32.282824Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-ad_jenkins-ppp-dev-dev",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.183",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "af9096a22d2944f68ead381afe05962a",
+        "created_at": "2026-03-26T01:43:53.180209Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-03-26T01:44:01.289032Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-ad_promxy-default-remote",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.165",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "ed23dde7fd0f4448ac640e81bb3028d3",
+        "created_at": "2025-09-24T10:08:49.940618Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-24T10:08:51.166733Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-grafana_grafana-api-beta",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.70",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "dded000dbef843ae8fe6a3f7abc91ec1",
+        "created_at": "2025-09-24T10:09:56.331837Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-24T10:09:57.713608Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-grafana_grafana-gate-beta",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.245",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "cc7ff084eda3466ab2fe514a725b8895",
+        "created_at": "2025-09-22T02:03:42.363958Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-22T02:03:43.586212Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-kafka_apiserver",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.230",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "86ac11c35614415e9829d179bcb33e5f",
+        "created_at": "2025-09-23T00:07:40.213090Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-23T00:07:41.873316Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-kafka_kafka-proxy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.94",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "1ad2ad9a335c4d8dbab5aeb60f9b81a3",
+        "created_at": "2025-09-23T09:14:30.151473Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-23T09:14:31.346610Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-kafka_manager-api",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.126",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "7eb532e124b34e65954185e72f43f038",
+        "created_at": "2026-05-11T09:24:04.139889Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-05-11T09:24:18.210165Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-opensearch-13fa315a40020502",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.234",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "51c710b92ed547aa97502f8c9c60cd51",
+        "created_at": "2026-05-10T23:37:47.101120Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-05-10T23:37:55.082569Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-opensearch-2c05e2fd232e1f24",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.35",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "1f764affa14e4f42ace5bb77af6b4aea",
+        "created_at": "2026-04-17T06:55:37.482293Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-04-17T06:55:45.165129Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-opensearch-a347352cf39997c3",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.254",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "bfad22fe113a4217a8c377a3493fbea4",
+        "created_at": "2026-04-30T04:48:57.351810Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-04-30T04:49:04.267030Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-opensearch_opensearch-api",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.242",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "8ed32b8ac05a498fbc7fae3b857a706f",
+        "created_at": "2026-05-11T09:20:06.638028Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-05-11T09:20:16.438920Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-platform-opensearch_os-osfarm",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.200",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a6f48c690d004bdea56d138105788ca9",
+        "created_at": "2026-05-28T04:44:48.580331Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-05-28T04:45:01.005036Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ad-api_ad-api-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.27",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "4d4435fc607a4a429321491206c2ff1c",
+        "created_at": "2026-10-16T03:20:28.847729Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-10-16T03:20:37.881628Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ad-api_console-api-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.120",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "262b838a0f3c433cb6c6951236b8f835",
+        "created_at": "2025-10-20T02:00:34.014960Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-20T02:00:35.996505Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ad-test_test-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.12",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3de799a0496740b0af8320535dbe6582",
+        "created_at": "2026-03-04T08:06:10.128955Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-03-04T08:06:19.362201Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ad-watcher_watcher-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.122",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3aff3ad9db7e4696a5514332583feaeb",
+        "created_at": "2026-02-11T08:27:18.932710Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-02-11T08:27:28.162230Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-arcus-dbd85b286b6bbf67",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.47",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "818429ad80014a5fb901f8904275f828",
+        "created_at": "2025-10-28T06:12:23.639801Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-10-28T06:12:31.111107Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-arcus_arcusmon-kr8-chat",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.177",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "45454cc9cedc404a9bd63b90a6c083e8",
+        "created_at": "2026-08-04T09:35:18.138630Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-08-04T09:35:33.242504Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-cjy_kafka-external-cjy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.230",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "04a958127d074615bfa1674bdcdad254",
+        "created_at": "2025-09-29T02:59:37.384085Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-29T02:59:38.873963Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ext-authz-i-2b50a282b5c0b74d",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.1",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3626c00262474fe8a74d14e39321e561",
+        "created_at": "2025-10-15T02:04:49.871586Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-15T02:04:51.583899Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-kr8-wmgi-4ba382286f80332d",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.200",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "04ed125979704a37becafd66d11c9fbb",
+        "created_at": "2025-10-03T02:01:58.113379Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-03T02:01:59.763305Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-kr8-wmgi-907420aa07d78bb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.241",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0643af47f2004653a2d85c1a43c15c06",
+        "created_at": "2025-09-30T10:45:45.096112Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T10:45:46.365559Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-kr8-wmgi_kr8-beta-burrow",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.36",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "77995d17db0545ea9303b72b8c82b772",
+        "created_at": "2025-10-15T01:59:35.271926Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-15T01:59:36.383976Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-kr8-wmgi_kr8-beta-burrow-copy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.56",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "da9f7f91445c440c8c80e204b81dad9e",
+        "created_at": "2025-09-25T05:52:00.888284Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-25T05:52:02.173316Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-n3r-fe_n3r-fe-ppp-dev",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.140",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "19ef1758b4764834ab18603c275f789d",
+        "created_at": "2026-07-29T04:51:07.085242Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-07-29T04:51:22.680747Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-n3r-web_web-ddpb1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.11",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "b6de6c337eec426d807ee97e7e31ed56",
+        "created_at": "2026-02-05T09:06:32.084861Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-02-05T09:06:42.472410Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-nbase-arc_arc2-kr8-post",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.93",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "80ed1a5be4cf43efa47d20414ee2f200",
+        "created_at": "2025-10-24T13:50:21.451553Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-10-24T13:50:31.273668Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-nbase-arc_arc2mon-ppp-nubes",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.150",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a437d97546a24943b55179165a0133a4",
+        "created_at": "2025-09-30T11:14:05.249966Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:14:06.612455Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-devconsole_devconsole",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.96",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3baf2ae4b9cb4f8cb67a74979cec0429",
+        "created_at": "2025-09-30T11:14:23.855215Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:14:25.135878Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-eco-1e375da3ac902619",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.64",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5916052adbd741c095593153823f135c",
+        "created_at": "2025-09-30T11:14:44.474722Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:14:45.963095Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-eco_ecoapi",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.4",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5eee0662055e4dcc949359d57014bcf4",
+        "created_at": "2025-09-30T11:15:03.357859Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:15:04.706509Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-eco_ecokafka",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.251",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a1ace4a30543405abeccdac57050606a",
+        "created_at": "2025-09-30T11:15:22.958374Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:15:24.086409Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-saasgw_saasgw",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.109",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "6ab2b309fb4f4e6db822191fb1aa1755",
+        "created_at": "2025-10-22T09:49:52.480255Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-22T09:49:53.890608Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-worksapis_gwoperate",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.226",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "e2032b787cc341ad812f365178ce9006",
+        "created_at": "2025-09-30T11:15:42.233222Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-30T11:15:43.619455Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-ppp-worksapis_worksapis",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.70",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "eb70fe1ef67a49349865c41274ac466b",
+        "created_at": "2026-06-11T01:01:07.134100Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-06-11T01:01:15.329660Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-wan_hello",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.99",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "1c81782c152c4462bef6f4d76a720832",
+        "created_at": "2026-06-11T01:16:40.001589Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 10,
+        "modified_at": "2026-06-11T01:16:49.765119Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-project-wan_mcserver",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.127",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "d67c32ea376c46e883d167860a6242f3",
+        "created_at": "2025-09-19T06:52:31.304876Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T06:52:32.432051Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_dashboard-templates",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.186",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "2f30682807254525aa234500da9a4f43",
+        "created_at": "2025-09-15T07:25:55.029764Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-15T07:25:56.763216Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_lobster-global-query",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.240",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5669a15dcf5d4241beb03ff618675d92",
+        "created_at": "2025-09-15T07:25:23.116761Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-15T07:25:24.389292Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_lobster-operator",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.66",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "d986dbb44f6241e2b6eade6dc7bd83de",
+        "created_at": "2025-09-15T07:25:02.029896Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-15T07:25:03.254051Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_lobster-query",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.92",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "450eecaf9f264ebcb070b02dc86d013c",
+        "created_at": "2025-09-18T10:50:17.357286Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:50:18.592035Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_monitor",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.150",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "79ec61340d974dafac41a7667596b0af",
+        "created_at": "2025-09-18T10:50:36.593241Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:50:37.674996Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_monitor-proxy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.153",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "f1ab13082d5441bca38c284daae90cc8",
+        "created_at": "2025-09-19T06:52:55.744310Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T06:52:57.000300Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_monitoring-helper",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.86",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "bb68e01c32774cc58ee5500835b12c81",
+        "created_at": "2025-09-18T10:49:18.776294Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:49:19.987502Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_n3r-hpa",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.193",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "80b70cff09e249debe7921f949bd43e5",
+        "created_at": "2025-09-18T10:48:58.804023Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:49:00.427280Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_n3r-hpa-exporter",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.59",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "dd7e8f55dd7348ebbc6e747fc00ef84c",
+        "created_at": "2025-09-18T10:49:38.060520Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:49:39.444062Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_n3r-hpa-validating-webhook",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.244",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "40fd6ec21c184e748d7f4610a367d9d3",
+        "created_at": "2025-09-12T05:38:46.878225Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T05:38:48.052807Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_n3r-k8s-server",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.216",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "a8eb89725f9544ab8f68a8e05c050923",
+        "created_at": "2025-09-12T05:38:16.403148Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2025-09-12T05:38:17.849439Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_node-auto-repair",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.76",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "41afbef34f1a4268ade31f5c84f3f0ba",
+        "created_at": "2025-09-19T08:28:49.129552Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-19T08:28:50.669624Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_promxy",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.52",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "43c5fa111e644ffd9fa92828a31f80ce",
+        "created_at": "2026-05-19T07:09:13.577022Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-05-19T07:09:22.258582Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_promxy-global",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.102.21",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "b381ed89d5004d6ebcd3b9b39357cf39",
+        "created_at": "2025-09-18T10:49:57.453905Z",
+        "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-18T10:49:58.632522Z",
+        "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+        "name": "n3r_ddpb1_n3r-system_promxy-n3rhpa",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.139",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "0376e30474914b46b3145ef0344600c1",
+        "created_at": "2025-10-16T06:22:42.159339Z",
+        "created_by": "bc779010007447d18aa4fd6329db0d65",
+        "firewall_id": "f74044c673c6440aa2ff582eb63abe95",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-10-16T06:22:43.322582Z",
+        "modified_by": "bc779010007447d18aa4fd6329db0d65",
+        "name": "nbaset-neoid",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.116.109",
+        "source_nat_ip": "172.16.116.227",
+        "state": "ACTIVE",
+        "subnet_id": "900578eec4b647cc9d53a9b092744fec",
+        "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "cde1e239f47e418e95e59a078a142e63",
+        "created_at": "2025-10-16T06:23:34.486841Z",
+        "created_by": "bc779010007447d18aa4fd6329db0d65",
+        "firewall_id": "f74044c673c6440aa2ff582eb63abe95",
+        "layer_type": "L4",
+        "listener_count": 3,
+        "modified_at": "2025-10-16T06:23:35.605306Z",
+        "modified_by": "bc779010007447d18aa4fd6329db0d65",
+        "name": "nbaset-works-msg",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.116.203",
+        "source_nat_ip": "172.16.116.227",
+        "state": "ACTIVE",
+        "subnet_id": "900578eec4b647cc9d53a9b092744fec",
+        "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "4d63dc23f6824b37beb3eee1c43bd448",
+        "created_at": "2025-10-23T08:09:59.105220Z",
+        "created_by": "fbaf1a447bf34f0c990e50186257f101",
+        "firewall_id": "979a9e1dc1d94b29967358273e076f44",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-23T08:10:02.945091Z",
+        "modified_by": "fbaf1a447bf34f0c990e50186257f101",
+        "name": "p3proxy",
+        "public_nat_enabled": true,
+        "service_ip": "172.16.106.22",
+        "source_nat_ip": "172.16.106.159",
+        "state": "ACTIVE",
+        "subnet_id": "e19e07012bf1445da639fd250cca9c53",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "d55f5f4158fa4852b01116fed6cab801",
+        "created_at": "2025-10-01T08:33:01.246914Z",
+        "created_by": "202b71466dcf44cab0bf3af46d74d1a1",
+        "firewall_id": "f74044c673c6440aa2ff582eb63abe95",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-01T08:33:02.465468Z",
+        "modified_by": "202b71466dcf44cab0bf3af46d74d1a1",
+        "name": "pdbservicelfour",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.116.240",
+        "source_nat_ip": "172.16.116.227",
+        "state": "ACTIVE",
+        "subnet_id": "900578eec4b647cc9d53a9b092744fec",
+        "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "cda03b3022e54da2a101783b01515509",
+        "created_at": "2026-08-31T02:14:06.983862Z",
+        "created_by": "b8d5f1166483468da5ebd4b74a830d8a",
+        "firewall_id": "9756fa986eb24531b6b7949b25784f46",
+        "layer_type": "L4",
+        "listener_count": 2,
+        "modified_at": "2026-08-31T04:24:19.384349Z",
+        "modified_by": "b8d5f1166483468da5ebd4b74a830d8a",
+        "name": "portal-lb",
+        "public_nat_enabled": true,
+        "service_ip": "172.16.120.42",
+        "source_nat_ip": "172.16.120.15",
+        "state": "ACTIVE",
+        "subnet_id": "357737e757c34334bb3a9b12c64dad25",
+        "vpc_id": "cc80f71901e74d1a81707270a3d63c27",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "1309bd4febce4406b93b64b250a9a8ae",
+        "created_at": "2025-09-22T07:07:26.951268Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 0,
+        "modified_at": "2025-09-22T07:07:28.145589Z",
+        "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "name": "pri-btvesdmsg-lb-19200",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.101.74",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3529a7992af44c0b9c6261d37b235cd6",
+        "created_at": "2025-09-08T04:51:07.509150Z",
+        "created_by": "b78803c3d7014acab0655795d9780884",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-08T04:51:17.233707Z",
+        "modified_by": "b78803c3d7014acab0655795d9780884",
+        "name": "priddadm1lb",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.167",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "5f717ec31f8946d78580139d07b85112",
+        "created_at": "2025-09-09T02:03:55.888401Z",
+        "created_by": "b78803c3d7014acab0655795d9780884",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-09-09T02:03:57.224821Z",
+        "modified_by": "b78803c3d7014acab0655795d9780884",
+        "name": "priddpb1lb",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.100.139",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "faffc24d526849acad2183e2a078e3d3",
+        "created_at": "2025-09-11T09:28:23.826734Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+        "layer_type": "L7",
+        "listener_count": 1,
+        "modified_at": "2025-09-11T09:28:25.052922Z",
+        "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "name": "pri_nubes_8080_lb",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.103.21",
+        "source_nat_ip": "172.16.101.252",
+        "state": "ACTIVE",
+        "subnet_id": "8566b856e5e0456b8264090d0212b364",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "e9cddf955df54409aeadc7e342141d06",
+        "created_at": "2026-03-09T11:06:28.220433Z",
+        "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "firewall_id": "d57440c1f0ff47f980d42a91bbf2a184",
+        "layer_type": "L4",
+        "listener_count": 0,
+        "modified_at": "2026-03-09T11:56:52.445797Z",
+        "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "name": "proxy-lb-test1",
+        "public_nat_enabled": false,
+        "service_ip": "172.16.105.204",
+        "source_nat_ip": "172.16.105.247",
+        "state": "ACTIVE",
+        "subnet_id": "c10881d13fa0443dad60d6023808971c",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "3675860a64da4196bb30439cc41694f0",
+        "created_at": "2026-10-15T01:09:00.930362Z",
+        "created_by": "f4c0acc8712943159920a074dda07d1d",
+        "firewall_id": "a32f2fb12aa149268b80bd044e15b6ce",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2026-10-15T01:13:22.604774Z",
+        "modified_by": "f4c0acc8712943159920a074dda07d1d",
+        "name": "test-test",
+        "public_nat_enabled": true,
+        "service_ip": "172.16.118.101",
+        "source_nat_ip": "172.16.118.76",
+        "state": "ACTIVE",
+        "subnet_id": "76925798451c408f91a7c2e1d2f6b58d",
+        "vpc_id": "b9ab6377c45c4a41a5421dc9241fd645",
+        "zones": [
+            "kr-west1-b"
+        ]
+    },
+    {
+        "id": "87e1789001b24e5e8bc94ffd46055bc1",
+        "created_at": "2025-10-23T08:18:36.756260Z",
+        "created_by": "fbaf1a447bf34f0c990e50186257f101",
+        "firewall_id": "979a9e1dc1d94b29967358273e076f44",
+        "layer_type": "L4",
+        "listener_count": 1,
+        "modified_at": "2025-10-23T08:18:40.372381Z",
+        "modified_by": "fbaf1a447bf34f0c990e50186257f101",
+        "name": "toolproxy",
+        "public_nat_enabled": true,
+        "service_ip": "172.16.106.23",
+        "source_nat_ip": "172.16.106.159",
+        "state": "ACTIVE",
+        "subnet_id": "e19e07012bf1445da639fd250cca9c53",
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "zones": [
+            "kr-west1-b"
+        ]
+    }
+]

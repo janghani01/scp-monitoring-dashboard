@@ -1,0 +1,4 @@
+LB_NAME,LB_TYPE,SG_NAME,MEMBER_NAME,MEMBER_IP,PORT
+"UNKNOWN","-","btvesb-msg-group","-","-","-"
+"UNKNOWN","-","llll","172.16.116.63","172.16.116.63","13306"
+"UNKNOWN","-","llll","172.16.117.1","172.16.117.1","13306"

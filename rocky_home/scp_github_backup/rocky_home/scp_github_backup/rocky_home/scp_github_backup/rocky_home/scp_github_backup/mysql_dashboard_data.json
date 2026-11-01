@@ -1,0 +1,266 @@
+[
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblmondb",
+        "vip": "172.16.116.101",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-mondb001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.27",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-mondb002",
+                "role": "STANDBY",
+                "ip": "172.16.116.113",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblmzsr",
+        "vip": "172.16.116.33",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-mzsr001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.166",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-mzsr002",
+                "role": "STANDBY",
+                "ip": "172.16.116.216",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblneoidloginlog",
+        "vip": "172.16.116.10",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-neoid-lil001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.23",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-neoid-lil002",
+                "role": "STANDBY",
+                "ip": "172.16.116.168",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblneoidnbaset",
+        "vip": "172.16.116.242",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-neoidnbs001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.68",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-neoidnbs002",
+                "role": "STANDBY",
+                "ip": "172.16.116.229",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblnrad",
+        "vip": "172.16.116.221",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-nr-ad001",
+                "role": "STANDBY",
+                "ip": "172.16.116.25",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-nr-ad002",
+                "role": "ACTIVE",
+                "ip": "172.16.116.188",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblnrelb",
+        "vip": "172.16.116.118",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-nr-elb001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.151",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-nr-elb002",
+                "role": "STANDBY",
+                "ip": "172.16.116.26",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblnriam",
+        "vip": "172.16.116.214",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-nr-iam001",
+                "role": "STANDBY",
+                "ip": "172.16.116.162",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-nr-iam002",
+                "role": "ACTIVE",
+                "ip": "172.16.116.173",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblnringress",
+        "vip": "172.16.116.194",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-nr-ingres001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.19",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-nr-ingres002",
+                "role": "STANDBY",
+                "ip": "172.16.116.137",
+                "status": "ERROR"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadblnrmkafka",
+        "vip": "172.16.116.45",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-nr-mkafka001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.155",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-nr-mkafka002",
+                "role": "STANDBY",
+                "ip": "172.16.116.164",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadbloneappnbase",
+        "vip": "172.16.116.238",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-one-nbase001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.145",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-one-nbase002",
+                "role": "STANDBY",
+                "ip": "172.16.116.42",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "betadbltest",
+        "vip": "172.16.116.217",
+        "port": 13306,
+        "spec": "db1v8m16",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "bdb-test001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.94",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "bdb-test002",
+                "role": "STANDBY",
+                "ip": "172.16.116.111",
+                "status": "RUNNING"
+            }
+        ]
+    },
+    {
+        "engine": "MySQL",
+        "cluster_name": "mzirtest",
+        "vip": "172.16.116.254",
+        "port": 13306,
+        "spec": "db1v4m8",
+        "cluster_state": "RUNNING",
+        "nodes": [
+            {
+                "server_name": "mzirtest001",
+                "role": "ACTIVE",
+                "ip": "172.16.116.96",
+                "status": "RUNNING"
+            },
+            {
+                "server_name": "mzirtest002",
+                "role": "STANDBY",
+                "ip": "172.16.116.165",
+                "status": "RUNNING"
+            }
+        ]
+    }
+]

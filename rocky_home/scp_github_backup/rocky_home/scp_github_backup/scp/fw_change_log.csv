@@ -1,0 +1,12 @@
+﻿감지 일시,방화벽명,유형,상태,마지막 수정일,변경 내용,Jira 티켓 번호(수기/연동용)
+2026-11-03 15:50:19,FW_LB_primgmtsub01,LB Firewall,ACTIVE,2026-10-15T01:50:35Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_LB_mgmt-lb-sub,LB Firewall,ACTIVE,2026-09-17T02:08:22Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_IGW_portal,IGW Firewall,ACTIVE,2026-09-17T01:54:46Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_LB_btpubworkssub01,LB Firewall,ACTIVE,2026-03-09T11:07:22Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_IGW_cts-test-vpc,IGW Firewall,ACTIVE,2026-03-03T10:59:00Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_IGW_nwbetadb,IGW Firewall,ACTIVE,2026-01-29T03:43:47Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_LB_btpublbsub01,LB Firewall,ACTIVE,2025-10-15T06:39:34Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_LB_pribetadbsub01,LB Firewall,ACTIVE,2025-09-30T11:20:04Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_IGW_nwbeta,IGW Firewall,ACTIVE,2026-03-09T11:56:11Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_LB_prilbsub01,LB Firewall,ACTIVE,2025-11-24T11:42:03Z,신규 방화벽 추가,
+2026-11-03 15:50:19,FW_IGW_nwbetamgmt,IGW Firewall,ACTIVE,2026-10-27T05:28:12Z,신규 방화벽 추가,

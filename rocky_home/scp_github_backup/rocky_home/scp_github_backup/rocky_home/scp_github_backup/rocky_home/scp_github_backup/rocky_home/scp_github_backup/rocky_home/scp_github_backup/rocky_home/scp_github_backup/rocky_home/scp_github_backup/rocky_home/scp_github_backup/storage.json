@@ -1,0 +1,246 @@
+{
+  "totalBuckets": 30,
+  "totalSizeGB": 17414.7,
+  "buckets": [
+    {
+      "bucketName": "admin-deploy",
+      "creationDate": "2025-09-29 06:33:20",
+      "sizeGB": 6.38,
+      "fileCount": 172,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "anp",
+      "creationDate": "2026-05-06 04:20:23",
+      "sizeGB": 12.61,
+      "fileCount": 972,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "anp-alpha",
+      "creationDate": "2026-04-16 07:21:19",
+      "sizeGB": 0.54,
+      "fileCount": 48,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "anp-kr8",
+      "creationDate": "2026-04-16 07:23:29",
+      "sizeGB": 0.23,
+      "fileCount": 6,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "anp-stage",
+      "creationDate": "2026-04-16 07:21:32",
+      "sizeGB": 0.0,
+      "fileCount": 0,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "beta-siem-audit-trail-bucket",
+      "creationDate": "2025-12-17 08:52:37",
+      "sizeGB": 0.0,
+      "fileCount": 2616,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "common",
+      "creationDate": "2025-09-19 04:48:02",
+      "sizeGB": 0.04,
+      "fileCount": 2,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "csdb",
+      "creationDate": "2025-09-16 01:26:01",
+      "sizeGB": 0.0,
+      "fileCount": 40,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "deploy-repo",
+      "creationDate": "2025-09-11 11:31:50",
+      "sizeGB": 0.0,
+      "fileCount": 0,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "firewall-logging",
+      "creationDate": "2025-08-27 04:39:14",
+      "sizeGB": 780.69,
+      "fileCount": 362663,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "gpd-package",
+      "creationDate": "2025-09-26 10:20:39",
+      "sizeGB": 2.91,
+      "fileCount": 36,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "gsaas",
+      "creationDate": "2026-09-10 06:31:01",
+      "sizeGB": 0.0,
+      "fileCount": 4,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "gsaas-anp",
+      "creationDate": "2026-01-29 02:24:49",
+      "sizeGB": 0.0,
+      "fileCount": 2,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "guidance-operation-kr8",
+      "creationDate": "2026-05-20 07:16:16",
+      "sizeGB": 0.0,
+      "fileCount": 26,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "mail",
+      "creationDate": "2025-09-05 02:21:12",
+      "sizeGB": 52.65,
+      "fileCount": 431,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "mail-repo",
+      "creationDate": "2025-09-12 08:27:40",
+      "sizeGB": "-",
+      "fileCount": "-",
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "mailweb-deploy",
+      "creationDate": "2025-09-17 01:31:38",
+      "sizeGB": 60.47,
+      "fileCount": 224,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "mongodb",
+      "creationDate": "2026-04-02 08:50:54",
+      "sizeGB": 0.13,
+      "fileCount": 1203,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "nbase",
+      "creationDate": "2025-09-05 09:29:40",
+      "sizeGB": 0.76,
+      "fileCount": 14,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "nbase-arc",
+      "creationDate": "2025-09-08 14:52:22",
+      "sizeGB": 0.53,
+      "fileCount": 11,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "neoid",
+      "creationDate": "2025-09-24 02:26:05",
+      "sizeGB": 0.38,
+      "fileCount": 18,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "nubes-backend-info",
+      "creationDate": "2025-09-15 06:01:02",
+      "sizeGB": 0.0,
+      "fileCount": 1,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "nubes-data",
+      "creationDate": "2025-09-04 10:23:45",
+      "sizeGB": 120.79,
+      "fileCount": 19637,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "ppp",
+      "creationDate": "2026-04-13 02:35:53",
+      "sizeGB": 0.0,
+      "fileCount": 48,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "securitygrouplogging",
+      "creationDate": "2025-08-27 04:49:31",
+      "sizeGB": 16374.52,
+      "fileCount": 6706412,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "statsrcv-deploy",
+      "creationDate": "2025-09-29 11:27:47",
+      "sizeGB": 0.11,
+      "fileCount": 2,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "test-sec-obj",
+      "creationDate": "2025-11-10 23:03:47",
+      "sizeGB": 0.0,
+      "fileCount": 0,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "wmgq-package",
+      "creationDate": "2025-09-25 06:42:19",
+      "sizeGB": 0.97,
+      "fileCount": 12,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "worksai-ai-poc",
+      "creationDate": "2026-10-06 04:19:11",
+      "sizeGB": 0.0,
+      "fileCount": 0,
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    },
+    {
+      "bucketName": "workseye-loki",
+      "creationDate": "2025-09-29 08:27:15",
+      "sizeGB": "-",
+      "fileCount": "-",
+      "accessType": "확인 필요",
+      "status": "ACTIVE"
+    }
+  ]
+}

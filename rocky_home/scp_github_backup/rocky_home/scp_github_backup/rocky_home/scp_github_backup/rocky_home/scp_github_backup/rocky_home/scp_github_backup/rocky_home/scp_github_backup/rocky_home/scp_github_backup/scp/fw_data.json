@@ -1,0 +1,2145 @@
+[
+    {
+        "id": "a32f2fb12aa149268b80bd044e15b6ce",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-10-15T01:09:39Z",
+        "created_by": "f4c0acc8712943159920a074dda07d1d",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2026-10-15T01:50:35Z",
+        "modified_by": "f4c0acc8712943159920a074dda07d1d",
+        "name": "FW_LB_primgmtsub01",
+        "pre_product_id": "76925798451c408f91a7c2e1d2f6b58d",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 2,
+        "vpc_id": "b9ab6377c45c4a41a5421dc9241fd645",
+        "vpc_name": "nwbetamgmt",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "f868ab5cfd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "aea51698d67b4d269220e8e12a4dc309",
+                "action": "ALLOW",
+                "created_at": "2026-10-15T01:21:13Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "172.16.118.101"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "a32f2fb12aa149268b80bd044e15b6ce",
+                "modified_at": "2026-10-15T01:21:23Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.221"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "cde572de8f28410e8b09266ee0e745b5",
+                "action": "ALLOW",
+                "created_at": "2026-10-15T01:23:22Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "172.16.118.9"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "a32f2fb12aa149268b80bd044e15b6ce",
+                "modified_at": "2026-10-15T01:50:35Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    }
+                ],
+                "source_address": [
+                    "172.16.118.76",
+                    "172.16.118.105",
+                    "172.16.118.85"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    },
+    {
+        "id": "9756fa986eb24531b6b7949b25784f46",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-08-31T02:14:58Z",
+        "created_by": "b8d5f1166483468da5ebd4b74a830d8a",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2026-09-17T02:08:22Z",
+        "modified_by": "f4c0acc8712943159920a074dda07d1d",
+        "name": "FW_LB_mgmt-lb-sub",
+        "pre_product_id": "357737e757c34334bb3a9b12c64dad25",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 2,
+        "vpc_id": "cc80f71901e74d1a81707270a3d63c27",
+        "vpc_name": "portal",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "fb2171bdfd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "8458f01302494f8ea858d91ad05cf489",
+                "action": "ALLOW",
+                "created_at": "2026-09-09T08:32:07Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "9756fa986eb24531b6b7949b25784f46",
+                "modified_at": "2026-09-17T02:08:22Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16",
+                    "211.176.129.138/32",
+                    "43.250.154.221/32",
+                    "221.163.81.205",
+                    "43.250.154.221",
+                    "112.222.171.133"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "469b8405b2284388bccac9fe428f3568",
+                "action": "ALLOW",
+                "created_at": "2026-09-09T08:32:07Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "9756fa986eb24531b6b7949b25784f46",
+                "modified_at": "2026-09-09T08:32:16Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    },
+    {
+        "id": "0ba2daa75b9b405982647ee10df6e019",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-08-31T02:10:33Z",
+        "created_by": "b8d5f1166483468da5ebd4b74a830d8a",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2026-09-17T01:54:46Z",
+        "modified_by": "f4c0acc8712943159920a074dda07d1d",
+        "name": "FW_IGW_portal",
+        "pre_product_id": "bc689ad74def4b7abcd76a00b4874837",
+        "product_type": "IGW",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 3,
+        "vpc_id": "cc80f71901e74d1a81707270a3d63c27",
+        "vpc_name": "portal",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "36eae487fd7611ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "b8e1b1c83c964087aa1c121e1a2daa4c",
+                "action": "ALLOW",
+                "created_at": "2026-08-31T04:18:48Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "0ba2daa75b9b405982647ee10df6e019",
+                "modified_at": "2026-08-31T04:18:57Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "bf1e0e384c684b258b2b594305eb56b9",
+                "action": "ALLOW",
+                "created_at": "2026-08-31T04:27:28Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "케이엘 정보통신 웹 페이지 접속",
+                "destination_address": [
+                    "123.41.35.129/32",
+                    "172.16.120.0/25"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "0ba2daa75b9b405982647ee10df6e019",
+                "modified_at": "2026-09-15T04:27:47Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    }
+                ],
+                "source_address": [
+                    "211.176.129.138/32",
+                    "43.250.154.221/32",
+                    "221.163.81.205",
+                    "43.250.154.221",
+                    "112.222.171.133"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "49ba01e0f308458f8dcf62e8123371eb",
+                "action": "ALLOW",
+                "created_at": "2026-09-15T07:05:48Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "123.41.35.129/32",
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "0ba2daa75b9b405982647ee10df6e019",
+                "modified_at": "2026-09-17T01:54:46Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 300,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    },
+    {
+        "id": "d57440c1f0ff47f980d42a91bbf2a184",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-03-09T11:07:22Z",
+        "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": false,
+        "modified_at": "2026-03-09T11:07:22Z",
+        "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "name": "FW_LB_btpubworkssub01",
+        "pre_product_id": "c10881d13fa0443dad60d6023808971c",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "DISABLE",
+        "total_rule_count": 0,
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "vpc_name": "nwbeta",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "f99d0958fd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": []
+    },
+    {
+        "id": "936956b1f56c446c8f51951f361c8686",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-03-03T08:34:24Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2026-03-03T10:59:00Z",
+        "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "name": "FW_IGW_cts-test-vpc",
+        "pre_product_id": "5aaee6c7803d4444886f47858e86e067",
+        "product_type": "IGW",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 3,
+        "vpc_id": "8dadb16a1e5f49a2a8165f977ed31d15",
+        "vpc_name": "cts-test-vpc",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "2152adfefd7a11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "3f0fe0ef25b84bb5815edcbb6fb7ce43",
+                "action": "ALLOW",
+                "created_at": "2026-03-03T10:58:53Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "936956b1f56c446c8f51951f361c8686",
+                "modified_at": "2026-03-03T10:58:53Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 50,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.0/23"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "31ba47642b66493291ff98a5a10282ab",
+                "action": "ALLOW",
+                "created_at": "2026-03-03T08:53:45Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "936956b1f56c446c8f51951f361c8686",
+                "modified_at": "2026-03-03T10:59:00Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "DISABLE"
+            },
+            {
+                "id": "1906b3d172b345d28d7a3f18240fc354",
+                "action": "ALLOW",
+                "created_at": "2026-03-03T08:54:04Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "936956b1f56c446c8f51951f361c8686",
+                "modified_at": "2026-03-03T08:54:04Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    },
+    {
+        "id": "92b696595a0547a6a34ec4276f203afc",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2026-01-29T03:43:47Z",
+        "created_by": "e87d490774c041c390309987c860ca21",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2026-01-29T03:43:47Z",
+        "modified_by": "e87d490774c041c390309987c860ca21",
+        "name": "FW_IGW_nwbetadb",
+        "pre_product_id": "84aea95496b4404d82a264bd1e005bc7",
+        "product_type": "IGW",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 0,
+        "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+        "vpc_name": "nwbetadb",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "3977aafdfd7611ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": []
+    },
+    {
+        "id": "979a9e1dc1d94b29967358273e076f44",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2025-10-09T05:31:42Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": false,
+        "modified_at": "2025-10-15T06:39:34Z",
+        "modified_by": "7f4a0e3cf0624ea9a47cbbae30c57085",
+        "name": "FW_LB_btpublbsub01",
+        "pre_product_id": "e19e07012bf1445da639fd250cca9c53",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "DISABLE",
+        "total_rule_count": 0,
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "vpc_name": "nwbeta",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "fa66a1ddfd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": []
+    },
+    {
+        "id": "f74044c673c6440aa2ff582eb63abe95",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2025-09-30T11:20:04Z",
+        "created_by": "202b71466dcf44cab0bf3af46d74d1a1",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": false,
+        "modified_at": "2025-09-30T11:20:04Z",
+        "modified_by": "202b71466dcf44cab0bf3af46d74d1a1",
+        "name": "FW_LB_pribetadbsub01",
+        "pre_product_id": "900578eec4b647cc9d53a9b092744fec",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "DISABLE",
+        "total_rule_count": 0,
+        "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+        "vpc_name": "nwbetadb",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "f670d510fd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": []
+    },
+    {
+        "id": "4da5c7b5c4db414d86327f2931e7d382",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2025-09-08T06:01:08Z",
+        "created_by": "f89b035ce4eb4f00a583f4165523d79a",
+        "flavor_name": "SMALL",
+        "flavor_rule_quota": 100,
+        "loggable": true,
+        "modified_at": "2026-03-09T11:56:11Z",
+        "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "name": "FW_IGW_nwbeta",
+        "pre_product_id": "82317393de5d4c70910253eda5ac55b7",
+        "product_type": "IGW",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 12,
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "vpc_name": "nwbeta",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "217c073cfd7a11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "acc1b11238fc465f859ddc4127fc4136",
+                "action": "ALLOW",
+                "created_at": "2026-02-03T05:29:04Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2026-03-09T11:56:11Z",
+                "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "sequence": 50,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "9cb1a0620ac1435ab8d696c4de4cc505",
+                "action": "ALLOW",
+                "created_at": "2026-01-29T03:41:20Z",
+                "created_by": "e87d490774c041c390309987c860ca21",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2026-01-29T03:41:20Z",
+                "modified_by": "e87d490774c041c390309987c860ca21",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "ICMP",
+                        "service_value": "0"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "1689cce5961d4af9a20d264ad5b04b29",
+                "action": "ALLOW",
+                "created_at": "2026-01-29T02:49:39Z",
+                "created_by": "e87d490774c041c390309987c860ca21",
+                "description": "adfasdf",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2026-01-29T02:50:34Z",
+                "modified_by": "e87d490774c041c390309987c860ca21",
+                "sequence": 300,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "22"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "f3f4d5fe658841be9ae6dab700fe0463",
+                "action": "ALLOW",
+                "created_at": "2025-11-06T10:09:42Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "NCP 통신 테스트",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-11-07T06:58:49Z",
+                "modified_by": "ca2029fbdbd94a338b09c1546b07072d",
+                "sequence": 400,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "30000-32767"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "d631539dedd74a65a6cca3f03ec9ed29",
+                "action": "ALLOW",
+                "created_at": "2025-10-27T07:15:13Z",
+                "created_by": "7f4a0e3cf0624ea9a47cbbae30c57085",
+                "description": "네이버 메일 수신서버 호출",
+                "destination_address": [
+                    "125.209.238.0/24",
+                    "223.130.200.121"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-27T07:15:14Z",
+                "modified_by": "7f4a0e3cf0624ea9a47cbbae30c57085",
+                "sequence": 500,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "25"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16",
+                    "123.41.55.0/24"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "30de31c8083d4b1896e5ce36933b8b41",
+                "action": "ALLOW",
+                "created_at": "2025-10-27T02:50:40Z",
+                "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "description": "네이버 메일 수신서버 호출",
+                "destination_address": [
+                    "125.209.238.0/24",
+                    "223.130.200.121"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-27T07:05:26Z",
+                "modified_by": "7f4a0e3cf0624ea9a47cbbae30c57085",
+                "sequence": 600,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "25"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "c2ad89f69d6e4b4db6f6faf58a20ab4c",
+                "action": "ALLOW",
+                "created_at": "2025-10-15T02:40:57Z",
+                "created_by": "d91c40b14d2d47b3ac96f9380e3f7e1a",
+                "description": "devops -> mail ci jenkins",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-15T02:44:27Z",
+                "modified_by": "d91c40b14d2d47b3ac96f9380e3f7e1a",
+                "sequence": 700,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "123.41.32.226"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "70531f016c2945e0a7dcb63cbb9e1281",
+                "action": "ALLOW",
+                "created_at": "2025-10-01T10:23:08Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-28T08:06:11Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 800,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8080"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "873"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16",
+                    "123.41.32.134/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "e9945ee313b74418bfde594626c67884",
+                "action": "ALLOW",
+                "created_at": "2025-09-15T11:49:20Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "172.16.104.209",
+                    "172.16.104.172/32",
+                    "123.41.34.51/32",
+                    "172.16.105.164",
+                    "172.16.105.220",
+                    "123.41.34.206/32",
+                    "172.16.106.86/32",
+                    "123.41.33.110/32",
+                    "172.16.107.46/32",
+                    "172.16.104.172/32",
+                    "123.41.35.41/32",
+                    "172.16.106.219/32",
+                    "123.41.33.160/32",
+                    "172.16.106.22/32",
+                    "123.41.34.27/32",
+                    "172.16.106.23/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-29T06:35:50Z",
+                "modified_by": "20def47d3dc14f739321299c782445eb",
+                "sequence": 900,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "25"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "3c6b1af815da4655b525d0086398a234",
+                "action": "ALLOW",
+                "created_at": "2025-09-11T02:17:06Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "112.107.105.24",
+                    "42.15.4.148",
+                    "112.107.105.22",
+                    "198.19.126.41",
+                    "112.107.105.22"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-09-24T02:34:31Z",
+                "modified_by": "b78803c3d7014acab0655795d9780884",
+                "sequence": 1000,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "4a524ab40e2d456abe9c54c56ebdfc93",
+                "action": "ALLOW",
+                "created_at": "2025-10-24T12:42:53Z",
+                "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "description": "인터넷 DNS 호출",
+                "destination_address": [
+                    "8.8.8.8"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-27T03:24:17Z",
+                "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "sequence": 1100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "53"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "53"
+                    },
+                    {
+                        "service_type": "ICMP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "49ec53667b4d4ca1952484583299d4c2",
+                "action": "ALLOW",
+                "created_at": "2025-10-30T01:21:26Z",
+                "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "description": "TCP/UDP 53 in test",
+                "destination_address": [
+                    "172.16.104.209"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "4da5c7b5c4db414d86327f2931e7d382",
+                "modified_at": "2025-10-30T01:30:21Z",
+                "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "sequence": 1200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "53"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "53"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    },
+    {
+        "id": "2d35db1ac21a4dfab290742496e4eab7",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2025-09-08T04:51:17Z",
+        "created_by": "b78803c3d7014acab0655795d9780884",
+        "flavor_name": "EXSMALL",
+        "flavor_rule_quota": 5,
+        "loggable": true,
+        "modified_at": "2025-11-24T11:42:03Z",
+        "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+        "name": "FW_LB_prilbsub01",
+        "pre_product_id": "8566b856e5e0456b8264090d0212b364",
+        "product_type": "LB",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 5,
+        "vpc_id": "2452c66c239546af9cdf703f85987570",
+        "vpc_name": "nwbeta",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "f5c9e4a9fd7c11ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "9a0b169305f9411688009dd9422800f7",
+                "action": "ALLOW",
+                "created_at": "2025-11-24T10:25:36Z",
+                "created_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "description": "p3proxy->n3r elb ip 접속 허용\nmqtt 포함",
+                "destination_address": [
+                    "172.16.100.80",
+                    "172.16.100.81",
+                    "172.16.100.82",
+                    "172.16.101.188"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+                "modified_at": "2025-11-24T11:42:03Z",
+                "modified_by": "76fad1fcf4fc4212bd66152bb91bfbde",
+                "sequence": 6,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    }
+                ],
+                "source_address": [
+                    "172.16.104.172",
+                    "172.16.104.20",
+                    "172.16.104.209",
+                    "172.16.105.220",
+                    "172.16.105.229"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "3758abf21ec04a898aff649f0a2acfad",
+                "action": "ALLOW",
+                "created_at": "2025-09-12T12:38:12Z",
+                "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+                "modified_at": "2025-09-12T12:38:12Z",
+                "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "sequence": 12,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "e6f1abce1b1e423187bd2f9b283111bc",
+                "action": "ALLOW",
+                "created_at": "2025-09-12T12:38:48Z",
+                "created_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+                "modified_at": "2025-09-12T12:38:48Z",
+                "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "sequence": 31,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "aab4ed9f500b4b11a261191789487999",
+                "action": "ALLOW",
+                "created_at": "2025-09-08T07:21:59Z",
+                "created_by": "b78803c3d7014acab0655795d9780884",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+                "modified_at": "2025-09-12T12:36:20Z",
+                "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "sequence": 50,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8080"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "6443"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "DISABLE"
+            },
+            {
+                "id": "9c0fca72c2b0484cb54b9ac35524989e",
+                "action": "ALLOW",
+                "created_at": "2025-09-08T07:21:33Z",
+                "created_by": "b78803c3d7014acab0655795d9780884",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "2d35db1ac21a4dfab290742496e4eab7",
+                "modified_at": "2025-09-12T12:35:42Z",
+                "modified_by": "7f36c2db2641468c98e09acc3aa96ed3",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8080"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "6443"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "DISABLE"
+            }
+        ]
+    },
+    {
+        "id": "63c3358270d540c480b662b927f1d5ad",
+        "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+        "created_at": "2025-08-25T08:54:24Z",
+        "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+        "flavor_name": "SMALL",
+        "flavor_rule_quota": 100,
+        "loggable": true,
+        "modified_at": "2026-10-27T05:28:12Z",
+        "modified_by": "f4c0acc8712943159920a074dda07d1d",
+        "name": "FW_IGW_nwbetamgmt",
+        "pre_product_id": "0a070a8c66ad4eb8b58682fed59b49da",
+        "product_type": "IGW",
+        "state": "ACTIVE",
+        "status": "ENABLE",
+        "total_rule_count": 28,
+        "vpc_id": "b9ab6377c45c4a41a5421dc9241fd645",
+        "vpc_name": "nwbetamgmt",
+        "zone_resources": [
+            {
+                "allocate_state": "SUCCESS",
+                "fw_resource_id": "395bbcaffd7611ef83356affcace8024",
+                "zone": "kr-west1-b"
+            }
+        ],
+        "rules": [
+            {
+                "id": "ed6cb82b4fe04440ac0ad4b79e6885e0",
+                "action": "ALLOW",
+                "created_at": "2026-01-26T08:12:25Z",
+                "created_by": "994f91b08239450bbf4ee56919f9947a",
+                "description": "Application 접근 포트 허용",
+                "destination_address": [
+                    "123.41.35.205/32",
+                    "123.41.35.37/32",
+                    "172.16.118.108/32",
+                    "172.16.118.97/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-01-26T08:12:26Z",
+                "modified_by": "994f91b08239450bbf4ee56919f9947a",
+                "sequence": 25,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "3000"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.221/32",
+                    "8.29.230.224/32",
+                    "104.30.134.245/32",
+                    "59.10.176.51/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "ff106c0ea2734892a74dedbe22ff208c",
+                "action": "ALLOW",
+                "created_at": "2026-01-26T04:13:59Z",
+                "created_by": "994f91b08239450bbf4ee56919f9947a",
+                "description": "",
+                "destination_address": [
+                    "123.41.35.205/32",
+                    "123.41.35.37/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-01-26T04:14:00Z",
+                "modified_by": "994f91b08239450bbf4ee56919f9947a",
+                "sequence": 50,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    }
+                ],
+                "source_address": [
+                    "8.29.230.224/32",
+                    "104.30.134.245/32",
+                    "59.10.176.51/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "6b9a8285b7954d64a7f5d87e2cb28ccc",
+                "action": "ALLOW",
+                "created_at": "2025-12-14T10:42:04Z",
+                "created_by": "0a544874b3114ca495b7e3ef87dfa17d",
+                "description": "유상진 test",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-12-20T02:08:47Z",
+                "modified_by": "0a544874b3114ca495b7e3ef87dfa17d",
+                "sequence": 100,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "114.206.228.152"
+                ],
+                "state": "ACTIVE",
+                "status": "DISABLE"
+            },
+            {
+                "id": "44c5a35a92d548cb8226e0b29bf1fd06",
+                "action": "ALLOW",
+                "created_at": "2025-10-24T05:27:32Z",
+                "created_by": "b78803c3d7014acab0655795d9780884",
+                "description": "",
+                "destination_address": [
+                    "123.41.34.84"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-24T05:27:32Z",
+                "modified_by": "b78803c3d7014acab0655795d9780884",
+                "sequence": 200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8428"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "2375"
+                    }
+                ],
+                "source_address": [
+                    "211.249.68.0/27",
+                    "220.230.168.0/27"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "74a12c578cb64558bdbf33e168e4621b",
+                "action": "ALLOW",
+                "created_at": "2025-10-24T05:27:05Z",
+                "created_by": "b78803c3d7014acab0655795d9780884",
+                "description": "",
+                "destination_address": [
+                    "123.41.34.84"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-24T05:27:05Z",
+                "modified_by": "b78803c3d7014acab0655795d9780884",
+                "sequence": 300,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8428"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "2375"
+                    }
+                ],
+                "source_address": [
+                    "211.249.68.0/27",
+                    "220.230.168.0/27"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "8f5ffca8195144efac2ee48e928aaf0c",
+                "action": "ALLOW",
+                "created_at": "2025-10-21T06:16:39Z",
+                "created_by": "b78803c3d7014acab0655795d9780884",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-21T06:49:47Z",
+                "modified_by": "b78803c3d7014acab0655795d9780884",
+                "sequence": 400,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8428"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "2375"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "945698eed5514ad79c4e54d0ab11cb9c",
+                "action": "ALLOW",
+                "created_at": "2025-10-17T02:09:27Z",
+                "created_by": "994f91b08239450bbf4ee56919f9947a",
+                "description": "MSP사 베스천 접속",
+                "destination_address": [
+                    "123.41.34.74/32",
+                    "172.16.118.10/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-17T02:09:27Z",
+                "modified_by": "994f91b08239450bbf4ee56919f9947a",
+                "sequence": 500,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10022"
+                    }
+                ],
+                "source_address": [
+                    "211.230.12.102/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "17ecb42582154dbb93dec752d1afdd86",
+                "action": "ALLOW",
+                "created_at": "2025-10-17T01:59:43Z",
+                "created_by": "fbaf1a447bf34f0c990e50186257f101",
+                "description": "MSP사 서버접근제어 접속",
+                "destination_address": [
+                    "123.41.32.12/32",
+                    "172.16.118.3/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-10-07T10:03:35Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 600,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "36000-36010"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "9000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "9090"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "2200"
+                    }
+                ],
+                "source_address": [
+                    "211.230.12.102/32",
+                    "218.153.74.13/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "2a9ab27d88d04e6d85bf72860d654558",
+                "action": "ALLOW",
+                "created_at": "2025-09-25T04:42:02Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "http, grafana external monitoring",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-05-28T04:21:15Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 700,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "3000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8080"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.193/26",
+                    "211.249.71.0/24",
+                    "211.53.159.130",
+                    "112.169.77.45",
+                    "211.249.40.0/27",
+                    "110.9.226.213/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "4160621dad8d4449bff5bdfb29cb6e60",
+                "action": "ALLOW",
+                "created_at": "2025-09-24T08:00:53Z",
+                "created_by": "fbaf1a447bf34f0c990e50186257f101",
+                "description": "임시 구축용, FOP",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-07-08T15:34:05Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 800,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.118.4/32",
+                    "123.41.35.23/32",
+                    "223.130.135.7/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "d71cc5afd21948f9b128912dec9fd61c",
+                "action": "ALLOW",
+                "created_at": "2025-09-22T09:46:05Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "x-idc to scp  rsync allow",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-01-14T06:49:02Z",
+                "modified_by": "45982f68b1b54455b74be4c32ba09725",
+                "sequence": 900,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "873"
+                    },
+                    {
+                        "service_type": "ICMP",
+                        "service_value": "0"
+                    }
+                ],
+                "source_address": [
+                    "117.52.141.192/27",
+                    "43.250.154.212/32",
+                    "172.16.118.97/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "f4ee8d1883174d28b00ab5b2a8289072",
+                "action": "ALLOW",
+                "created_at": "2025-09-11T07:48:27Z",
+                "created_by": "994f91b08239450bbf4ee56919f9947a",
+                "description": "",
+                "destination_address": [
+                    "123.41.32.12/32",
+                    "172.16.118.3/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-10-07T10:10:07Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 1000,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "36000-36010"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "9000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "9090"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8161"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    }
+                ],
+                "source_address": [
+                    "121.183.249.135/32",
+                    "211.249.71.0/24",
+                    "211.249.70.0/24",
+                    "210.96.220.0/24",
+                    "43.250.154.0/24",
+                    "1.213.186.170",
+                    "211.176.129.138",
+                    "58.229.252.61",
+                    "43.250.154.221"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "fba888523ba748b9b0d2e34a714bb41b",
+                "action": "ALLOW",
+                "created_at": "2025-09-09T06:32:01Z",
+                "created_by": "994f91b08239450bbf4ee56919f9947a",
+                "description": "CharkraMax 관리 포털 접속용",
+                "destination_address": [
+                    "123.41.35.23/32",
+                    "172.16.118.4/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-05-13T02:01:31Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 1100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10015"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10054"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10100-11000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "20080"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "9521"
+                    }
+                ],
+                "source_address": [
+                    "121.183.249.135/32",
+                    "211.249.71.0/24",
+                    "211.249.70.0/24",
+                    "210.96.220.0/24",
+                    "43.250.154.0/24",
+                    "1.213.186.170",
+                    "211.230.12.102/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "330ef582474348cdb77a6de962ad00c5",
+                "action": "ALLOW",
+                "created_at": "2025-09-05T06:22:51Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-12-22T04:53:25Z",
+                "modified_by": "0a544874b3114ca495b7e3ef87dfa17d",
+                "sequence": 1200,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "13389"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "3389"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "b843b9df3b1049dc94ec6a951d031f80",
+                "action": "ALLOW",
+                "created_at": "2025-08-29T07:56:25Z",
+                "created_by": "9a064d0f886a4b649d6524338e0e8f39",
+                "description": "ssh : 172.16.0.0/16 VPC 망간 10022 open",
+                "destination_address": [
+                    "172.16.0.0/16"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-27T06:45:35Z",
+                "modified_by": "566e8c466f4e4a3ba29fa643aef33e0d",
+                "sequence": 1300,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10022"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "2b7694144e6044a4b36f33628906f67c",
+                "action": "ALLOW",
+                "created_at": "2025-08-29T07:35:43Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "172.16.0.0/16",
+                    "172.16.97.171"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-10-27T06:45:22Z",
+                "modified_by": "566e8c466f4e4a3ba29fa643aef33e0d",
+                "sequence": 1400,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10022"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "UDP",
+                        "service_value": "ALL"
+                    },
+                    {
+                        "service_type": "ICMP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "172.16.0.0/16",
+                    "172.16.118.71"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "df7539b3fd2a4222bfec53626e2be886",
+                "action": "ALLOW",
+                "created_at": "2025-08-27T05:45:59Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-09-17T09:04:21Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 1500,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "1-65535"
+                    },
+                    {
+                        "service_type": "ICMP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "4cb1efc44e1340c8afe387ad0ef18112",
+                "action": "ALLOW",
+                "created_at": "2025-08-25T09:51:27Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "",
+                "destination_address": [
+                    "0.0.0.0/0"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2025-12-22T04:53:25Z",
+                "modified_by": "0a544874b3114ca495b7e3ef87dfa17d",
+                "sequence": 1600,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10022"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "6443"
+                    }
+                ],
+                "source_address": [
+                    "0.0.0.0/0"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "37c76ce1a96640b3a926538581957e3c",
+                "action": "ALLOW",
+                "created_at": "2026-01-20T06:54:32Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "파일 동기화 테스트(over TLS)",
+                "destination_address": [
+                    "123.41.33.110/32",
+                    "123.41.34.206/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-01-22T06:10:59Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 1700,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5000"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.193/26",
+                    "211.249.71.0/24",
+                    "211.53.159.130",
+                    "112.169.77.45",
+                    "43.250.154.220/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "6cc312f72c8f40a4b02893796e0a0330",
+                "action": "ALLOW",
+                "created_at": "2026-01-26T02:06:57Z",
+                "created_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "description": "메가존 모니터링(정정화)",
+                "destination_address": [
+                    "123.41.35.205/32",
+                    "172.16.118.108/32",
+                    "172.16.118.97/32",
+                    "123.41.35.37/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-01-26T02:09:40Z",
+                "modified_by": "439c4a9d14834ca7a978d490c2eeeb50",
+                "sequence": 1800,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "3000"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.221/32",
+                    "8.29.230.224/32",
+                    "104.30.135.245/32",
+                    "59.10.176.51/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "bc0c1cc657d848b4b93ed3a27e3ec27f",
+                "action": "ALLOW",
+                "created_at": "2026-01-29T04:49:00Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "그린팩토리 운영자, 세림티에스지 > 로그프레소 Web",
+                "destination_address": [
+                    "123.41.33.14",
+                    "172.16.118.25"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-02-04T05:27:26Z",
+                "modified_by": "8c50da51c69e4cf9868b1bffa44a5385",
+                "sequence": 1900,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8443"
+                    }
+                ],
+                "source_address": [
+                    "121.183.249.135/32",
+                    "106.101.131.230/32",
+                    "43.250.154.0/24",
+                    "106.101.139.109/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "7c90346782814f4da2eedcb4c50d1e1f",
+                "action": "ALLOW",
+                "created_at": "2026-01-29T05:25:25Z",
+                "created_by": "8c50da51c69e4cf9868b1bffa44a5385",
+                "description": "그린팩토리 운영자 > CPP Manager",
+                "destination_address": [
+                    "123.41.34.116",
+                    "172.16.118.16",
+                    "123.41.34.19",
+                    "172.16.118.5"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-03-23T09:02:08Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 2000,
+                "service": [
+                    {
+                        "service_type": "ALL",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "211.212.5.199/32",
+                    "43.250.152.0/22"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "28be9334062f4828b71e22fd0e5f13cc",
+                "action": "ALLOW",
+                "created_at": "2026-03-23T09:03:15Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "",
+                "destination_address": [
+                    "123.41.35.205/32",
+                    "172.16.118.108/32",
+                    "172.16.118.97/32",
+                    "123.41.35.37/32"
+                ],
+                "direction": "OUTBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-03-23T09:03:17Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 2100,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "ALL"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.221/32",
+                    "8.29.230.224/32",
+                    "104.30.135.245/32",
+                    "59.10.176.51/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "56e3fa5f2c4d4f9ba5b7f4e28cb75cff",
+                "action": "ALLOW",
+                "created_at": "2026-05-20T08:19:17Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "메가존 & 네이버 클라우드 외부 사용자 WEB 접속",
+                "destination_address": [
+                    "172.16.118.55/32",
+                    "123.41.35.76/32",
+                    "172.16.118.68/32",
+                    "123.41.32.216/32",
+                    "172.16.118.82/32",
+                    "123.41.35.129/32",
+                    "172.16.118.24/32",
+                    "123.41.34.1/32",
+                    "172.16.118.52/32",
+                    "123.41.34.165/32"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-06-16T01:27:44Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 2300,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "80"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8080"
+                    }
+                ],
+                "source_address": [
+                    "8.29.230.224/32",
+                    "104.30.134.245/32",
+                    "59.10.176.51/32",
+                    "43.250.154.221/32",
+                    "59.10.176.12/32",
+                    "101.2.200.98/32",
+                    "101.2.200.69/32"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "d4ad4962c1a74570b57e4fa81a344b07",
+                "action": "ALLOW",
+                "created_at": "2026-05-27T07:44:13Z",
+                "created_by": "327f23840150414f9c5b31be650fa6ca",
+                "description": "MZC Zscaler > Beta 망 MZC grafana UI 접근 (공인망 통신)",
+                "destination_address": [
+                    "123.41.35.205",
+                    "123.41.35.37"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-05-27T07:44:15Z",
+                "modified_by": "327f23840150414f9c5b31be650fa6ca",
+                "sequence": 2400,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "3000"
+                    }
+                ],
+                "source_address": [
+                    "101.2.200.98",
+                    "101.2.200.69"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "e89728500b3b451894a9b62e0abe68c2",
+                "action": "ALLOW",
+                "created_at": "2026-05-27T07:44:13Z",
+                "created_by": "327f23840150414f9c5b31be650fa6ca",
+                "description": "MZC Zscaler > Beta 망 Bastion 접근 (공인망 통신)",
+                "destination_address": [
+                    "123.41.34.74",
+                    "123.41.34.84",
+                    "172.16.118.113"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-06-11T07:36:48Z",
+                "modified_by": "db578222145a4a33ac15c49165f98e6d",
+                "sequence": 2500,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "10022"
+                    }
+                ],
+                "source_address": [
+                    "101.2.200.98",
+                    "101.2.200.69",
+                    "43.250.154.0/24"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "67208bcb39034dbd801b74d1ffa08761",
+                "action": "ALLOW",
+                "created_at": "2026-06-02T14:11:43Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "API 테스트",
+                "destination_address": [
+                    "123.41.33.138",
+                    "172.16.118.63",
+                    "123.41.34.19",
+                    "172.16.118.5"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-10-27T05:28:12Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 2600,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5000"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "22"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "8803-8810"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5465"
+                    },
+                    {
+                        "service_type": "TCP",
+                        "service_value": "5645"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.0/24"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            },
+            {
+                "id": "4bc44b6e74ba4de2bc2bcbad29f82343",
+                "action": "ALLOW",
+                "created_at": "2026-10-15T01:24:05Z",
+                "created_by": "f4c0acc8712943159920a074dda07d1d",
+                "description": "LB TEST",
+                "destination_address": [
+                    "172.16.118.76"
+                ],
+                "direction": "INBOUND",
+                "firewall_id": "63c3358270d540c480b662b927f1d5ad",
+                "modified_at": "2026-10-15T01:24:15Z",
+                "modified_by": "f4c0acc8712943159920a074dda07d1d",
+                "sequence": 2700,
+                "service": [
+                    {
+                        "service_type": "TCP",
+                        "service_value": "443"
+                    }
+                ],
+                "source_address": [
+                    "43.250.154.221"
+                ],
+                "state": "ACTIVE",
+                "status": "ENABLE"
+            }
+        ]
+    }
+]

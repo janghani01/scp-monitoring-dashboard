@@ -1,5 +1,317 @@
 [
   {
+    "time": "2026-11-10 23:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 88.0%"
+  },
+  {
+    "time": "2026-11-10 23:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 22:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 21:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 20:49:02",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-10 20:30:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 84.0%"
+  },
+  {
+    "time": "2026-11-10 20:10:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 82.0%"
+  },
+  {
+    "time": "2026-11-10 20:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 95.0%"
+  },
+  {
+    "time": "2026-11-10 19:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 18:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 17:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 16:40:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 16:20:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-10 16:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 15:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 81.0%"
+  },
+  {
+    "time": "2026-11-10 15:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 14:00:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 99.0%"
+  },
+  {
+    "time": "2026-11-10 13:10:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 13:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 12:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 81.0%"
+  },
+  {
+    "time": "2026-11-10 12:50:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-10 12:30:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-10 12:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 11:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 10:50:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-10 10:30:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-10 10:20:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-10 10:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 09:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 81.0%"
+  },
+  {
+    "time": "2026-11-10 09:20:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-10 09:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 08:40:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-10 08:30:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 94.0%"
+  },
+  {
+    "time": "2026-11-10 08:20:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 90.0%"
+  },
+  {
+    "time": "2026-11-10 08:10:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-10 08:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 07:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 06:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 81.0%"
+  },
+  {
+    "time": "2026-11-10 06:00:02",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-10 05:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 81.0%"
+  },
+  {
+    "time": "2026-11-10 05:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 04:40:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 85.0%"
+  },
+  {
+    "time": "2026-11-10 04:30:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 91.0%"
+  },
+  {
+    "time": "2026-11-10 04:20:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 82.0%"
+  },
+  {
+    "time": "2026-11-10 04:10:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 88.0%"
+  },
+  {
+    "time": "2026-11-10 04:00:02",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 03:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 02:49:02",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 89.0%"
+  },
+  {
+    "time": "2026-11-10 02:00:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 95.0%"
+  },
+  {
+    "time": "2026-11-10 01:00:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-10 00:40:01",
+    "server": "mz-dashboard-01 (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-10 00:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 99.0%"
+  },
+  {
     "time": "2026-11-09 23:51:01",
     "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
     "type": "CPU 과부하",
@@ -2686,317 +2998,5 @@
     "server": "mz-dashboard-01 (172.16.118.63)",
     "type": "CPU 과부하",
     "message": "현재 CPU 82.0%"
-  },
-  {
-    "time": "2026-11-06 21:30:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 21:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 82.0%"
-  },
-  {
-    "time": "2026-11-06 21:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 21:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 97.0%"
-  },
-  {
-    "time": "2026-11-06 20:50:02",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 82.0%"
-  },
-  {
-    "time": "2026-11-06 20:49:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 92.0%"
-  },
-  {
-    "time": "2026-11-06 20:41:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 20:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 93.0%"
-  },
-  {
-    "time": "2026-11-06 20:30:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 93.0%"
-  },
-  {
-    "time": "2026-11-06 20:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 95.0%"
-  },
-  {
-    "time": "2026-11-06 20:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 91.0%"
-  },
-  {
-    "time": "2026-11-06 20:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 92.0%"
-  },
-  {
-    "time": "2026-11-06 19:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 19:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 19:30:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 19:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 19:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 82.0%"
-  },
-  {
-    "time": "2026-11-06 19:00:02",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 97.0%"
-  },
-  {
-    "time": "2026-11-06 18:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 18:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 18:30:02",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 18:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 18:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 18:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 97.0%"
-  },
-  {
-    "time": "2026-11-06 17:51:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 90.0%"
-  },
-  {
-    "time": "2026-11-06 17:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 17:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 17:30:02",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 17:20:02",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 17:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 17:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 96.0%"
-  },
-  {
-    "time": "2026-11-06 16:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 16:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 98.0%"
-  },
-  {
-    "time": "2026-11-06 16:30:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 100.0%"
-  },
-  {
-    "time": "2026-11-06 16:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 94.0%"
-  },
-  {
-    "time": "2026-11-06 16:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 99.0%"
-  },
-  {
-    "time": "2026-11-06 16:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 92.0%"
-  },
-  {
-    "time": "2026-11-06 15:51:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 15:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 15:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-11-06 15:30:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 82.0%"
-  },
-  {
-    "time": "2026-11-06 15:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 86.0%"
-  },
-  {
-    "time": "2026-11-06 15:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 15:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 95.0%"
-  },
-  {
-    "time": "2026-11-06 14:50:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 85.0%"
-  },
-  {
-    "time": "2026-11-06 14:49:02",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 95.0%"
-  },
-  {
-    "time": "2026-11-06 14:40:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 14:30:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 14:20:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 14:10:01",
-    "server": "mz-dashboard-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 81.0%"
-  },
-  {
-    "time": "2026-11-06 14:00:01",
-    "server": "Unknown (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 96.0%"
-  },
-  {
-    "time": "2026-11-06 13:51:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 87.0%"
   }
 ]

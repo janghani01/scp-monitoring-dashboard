@@ -1,0 +1,79 @@
+{
+    "a32f2fb12aa149268b80bd044e15b6ce": {
+        "name": "FW_LB_primgmtsub01",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-10-15T01:50:35Z",
+        "rules": []
+    },
+    "9756fa986eb24531b6b7949b25784f46": {
+        "name": "FW_LB_mgmt-lb-sub",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-09-17T02:08:22Z",
+        "rules": []
+    },
+    "0ba2daa75b9b405982647ee10df6e019": {
+        "name": "FW_IGW_portal",
+        "type": "IGW Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-09-17T01:54:46Z",
+        "rules": []
+    },
+    "d57440c1f0ff47f980d42a91bbf2a184": {
+        "name": "FW_LB_btpubworkssub01",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-03-09T11:07:22Z",
+        "rules": []
+    },
+    "936956b1f56c446c8f51951f361c8686": {
+        "name": "FW_IGW_cts-test-vpc",
+        "type": "IGW Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-03-03T10:59:00Z",
+        "rules": []
+    },
+    "92b696595a0547a6a34ec4276f203afc": {
+        "name": "FW_IGW_nwbetadb",
+        "type": "IGW Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-01-29T03:43:47Z",
+        "rules": []
+    },
+    "979a9e1dc1d94b29967358273e076f44": {
+        "name": "FW_LB_btpublbsub01",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2025-10-15T06:39:34Z",
+        "rules": []
+    },
+    "f74044c673c6440aa2ff582eb63abe95": {
+        "name": "FW_LB_pribetadbsub01",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2025-09-30T11:20:04Z",
+        "rules": []
+    },
+    "4da5c7b5c4db414d86327f2931e7d382": {
+        "name": "FW_IGW_nwbeta",
+        "type": "IGW Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-03-09T11:56:11Z",
+        "rules": []
+    },
+    "2d35db1ac21a4dfab290742496e4eab7": {
+        "name": "FW_LB_prilbsub01",
+        "type": "LB Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2025-11-24T11:42:03Z",
+        "rules": []
+    },
+    "63c3358270d540c480b662b927f1d5ad": {
+        "name": "FW_IGW_nwbetamgmt",
+        "type": "IGW Firewall",
+        "state": "ACTIVE",
+        "modified_at": "2026-10-27T05:28:12Z",
+        "rules": []
+    }
+}

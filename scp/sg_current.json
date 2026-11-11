@@ -1462,7 +1462,7 @@
         "created_by": "f4c0acc8712943159920a074dda07d1d",
         "description": "SCP 대시보드 (장한이)",
         "loggable": true,
-        "modified_at": "2026-10-27T05:23:48Z",
+        "modified_at": "2026-11-11T06:40:34Z",
         "modified_by": "f4c0acc8712943159920a074dda07d1d",
         "name": "mz-dashboard-sg",
         "rule_count": 3,

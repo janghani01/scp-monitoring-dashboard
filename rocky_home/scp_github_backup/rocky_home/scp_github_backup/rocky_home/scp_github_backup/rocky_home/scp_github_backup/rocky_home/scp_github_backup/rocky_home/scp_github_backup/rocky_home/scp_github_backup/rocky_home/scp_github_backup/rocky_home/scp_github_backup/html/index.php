@@ -228,13 +228,43 @@ try {
                     $output = $output2;
                 }
             }
+            echo $output ?: json_encode([]);
+            exit;
+        }
 
+        if ($action === 'get_fw_rules') {
+            $fwId = escapeshellarg($req['fw_id'] ?? '');
+            $cmd = "sudo /usr/local/bin/scp-cli firewall firewall-rule list --firewall_id {$fwId} --format json 2>&1";
+            $output = shell_exec($cmd);
             echo $output ?: json_encode([]);
             exit;
         }
 
         if ($action === 'get_cloud_resource') {
             $type = $req['type'] ?? '';
+
+            if ($type === 'fw') {
+                $cmd = "sudo /usr/local/bin/scp-cli firewall firewall list --format json 2>&1";
+                $output = shell_exec($cmd);
+                $decoded = json_decode($output, true);
+                
+                $items = [];
+                if (isset($decoded['contents'])) $items = $decoded['contents'];
+                elseif (is_array($decoded)) $items = $decoded;
+
+                $data = [];
+                foreach ($items as $item) {
+                    $data[] = [
+                        'ID' => $item['firewallId'] ?? $item['id'] ?? '-',
+                        'NAME' => $item['firewallName'] ?? $item['name'] ?? '-',
+                        'STATE' => $item['firewallState'] ?? $item['state'] ?? '-',
+                        'CREATED AT' => $item['createdDt'] ?? $item['created_at'] ?? '-',
+                        'RULES' => 'CLICK_TO_VIEW'
+                    ];
+                }
+                echo json_encode($data, JSON_UNESCAPED_UNICODE);
+                exit;
+            }
 
             if ($type === 'iam') {
                 $file = '/opt/scp/iam_current.json';
@@ -578,7 +608,7 @@ tr:hover { background: #f8fafc; }
 .terminal-output { background: #1e1e1e; color: #a3be8c; padding: 15px; border-radius: 8px; font-family: monospace; font-size: 13px; white-space: pre-wrap; max-height: 300px; overflow-y: auto; display: none; margin-bottom: 20px; }
 
 .modal-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.6); display:none; justify-content:center; align-items:center; z-index: 9999; }
-.modal-card { background: white; width: 900px; max-width: 95%; border-radius: 12px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); position: relative; max-height:90vh; display:flex; flex-direction:column; }
+.modal-card { background: white; width: 1000px; max-width: 95%; border-radius: 12px; padding: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); position: relative; max-height:90vh; display:flex; flex-direction:column; }
 .modal-header { display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; flex-shrink:0; }
 .modal-title { font-size: 18px; font-weight: bold; color: #0f172a; }
 .btn-close-modal { background: none; border: none; font-size: 20px; cursor: pointer; color: #64748b; }
@@ -642,7 +672,9 @@ body.dark-mode #newRoutineTimeModal, body.dark-mode #newRoutineInputModal, body.
             <li><a href="#" onclick="showTab('page-dbaas', this)">🗄️ DBaaS 관리 (MySQL)</a></li>
             <li><a href="#" onclick="showTab('page-iam', this)">🔑 IAM 권한 관리</a></li>
             <li><a href="#" onclick="showTab('page-sg', this)">🛡 Security Group 규칙</a></li>
+            <li><a href="#" onclick="showTab('page-fw-rules', this)">🔥 방화벽 규칙 조회</a></li>
             <li><a href="#" onclick="showTab('page-lb', this)">⚖️ Load Balancer 관리</a></li>
+            <li><a href="#" onclick="showTab('page-firewall', this)">🛡️ 방화벽 변경 이력</a></li>
             <li><a href="#" onclick="showTab('page-jira', this)">🎫 Jira 요청 관리</a></li>
             <li><a href="#" onclick="showTab('page-network', this)">🌐 통신 확인</a></li>
             <li><a href="#" onclick="showTab('page-security', this)">🛡️ KISA 취약점 진단</a></li>
@@ -787,24 +819,23 @@ body.dark-mode #newRoutineTimeModal, body.dark-mode #newRoutineInputModal, body.
                         <?php
                         if(isset($serverData['servers'])){
                             foreach($serverData['servers'] as $server){
-                                $ip = $server['addresses'][0]['ip_addresses'][0]['ip_address'] ?? ''; 
+                                $ip = $server['addresses'][0]['ip_addresses'][0]['ip_address'] ?? '';
                                 $type='VM';
                                 if(strpos(strtolower($server['server_type']['name'] ?? ''),'gpu')!==false) $type='GPU';
-                                
-                                $os = $osInfo[$ip]['os'] ?? '-'; 
-                                $osClass=''; 
+
+                                $os = $osInfo[$ip]['os'] ?? '-';
+                                $osClass='';
                                 $osFilter='OTHER';
-                                if(stripos($os,'Rocky')!==false){ $osClass='os-rocky'; $osFilter='Rocky'; } 
-                                elseif(stripos($os,'Ubuntu')!==false){ $osClass='os-ubuntu'; $osFilter='Ubuntu'; } 
-                                elseif(stripos($os,'Windows')!==false){ $osClass='os-win'; $osFilter='Windows'; } 
+                                if(stripos($os,'Rocky')!==false){ $osClass='os-rocky'; $osFilter='Rocky'; }
+                                elseif(stripos($os,'Ubuntu')!==false){ $osClass='os-ubuntu'; $osFilter='Ubuntu'; }
+                                elseif(stripos($os,'Windows')!==false){ $osClass='os-win'; $osFilter='Windows'; }
                                 elseif($os=='UNREACHABLE' || $os=='접속불가'){ $os='접속불가'; $osClass='os-unreachable'; $osFilter='UNREACHABLE'; }
-                                
-                                $status = $server['state'] ?? '-'; 
-                                $statusClass = ($status=='ACTIVE') ? 'status-active' : 'status-error'; 
+
+                                $status = $server['state'] ?? '-';
+                                $statusClass = ($status=='ACTIVE') ? 'status-active' : 'status-error';
                                 $disabled = ($os === '접속불가' || $ip === '') ? 'disabled' : '';
                                 $serverName = htmlspecialchars($server['name'] ?? '-');
 
-                                // 💡 방화벽(SG) 파싱 로직 추가
                                 $sgList = [];
                                 if (isset($server['security_groups']) && is_array($server['security_groups'])) {
                                     foreach ($server['security_groups'] as $sg) {
@@ -931,6 +962,21 @@ body.dark-mode #newRoutineTimeModal, body.dark-mode #newRoutineInputModal, body.
             </div>
         </div>
 
+        <div id="page-fw-rules" class="tab-page">
+            <div class="mgmt-card">
+                <div class="mgmt-header"><div class="mgmt-title">🔥 방화벽(IGW/LB) 상세 규칙 실시간 조회 (CLI 연동)</div></div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; background:#f8fafc; padding:15px; border-radius:8px; border:1px solid #e2e8f0;">
+                    <div style="font-size:13px; color:#2563eb; font-weight:bold;">※ Security Group(SG)처럼 클릭하여 실시간 방화벽 상세 규칙을 확인할 수 있습니다.</div>
+                    <div style="display:flex; gap:8px;">
+                        <input type="text" id="searchFwRules" class="search" placeholder="방화벽 이름, ID 검색..." onkeyup="applyCloudFilter('fw', '#fwRulesTable', 'searchFwRules')">
+                        <button class="btn-excel" onclick="exportDynamicTableToCsv('fwRulesTable', 'SCP_Firewall_Rules_List')" style="padding: 8px 15px; font-size: 13px;">📊 Excel 다운로드</button>
+                        <button class="btn-blue" onclick="loadCloudResource('fw', '#fwRulesTable')" style="padding: 8px 15px; font-size: 13px;">🔄 화면 새로고침</button>
+                    </div>
+                </div>
+                <div class="table-container"><table id="fwRulesTable"><thead><tr><th>데이터 로딩 중...</th></tr></thead><tbody></tbody></table></div>
+            </div>
+        </div>
+
         <div id="page-lb" class="tab-page">
             <div class="mgmt-card">
                 <div class="mgmt-header"><div class="mgmt-title">⚖️ Load Balancer 대상 및 리스너 그룹 맵핑 현황</div></div>
@@ -943,6 +989,118 @@ body.dark-mode #newRoutineTimeModal, body.dark-mode #newRoutineInputModal, body.
                     </div>
                 </div>
                 <div class="table-container"><table id="lbTable"><thead><tr><th>데이터 로딩 중...</th></tr></thead><tbody></tbody></table></div>
+            </div>
+        </div>
+
+        <!-- 🛡️ 방화벽(IGW/LB) 변경 및 삭제 이력 (컬럼 분리 10열 버전) -->
+        <div id="page-firewall" class="tab-page">
+            <div class="mgmt-card">
+                <div class="mgmt-header">
+                    <div class="mgmt-title">🛡️ 방화벽(IGW/LB) 변경 및 삭제 이력</div>
+                </div>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 20px; background:#f8fafc; padding:15px; border-radius:8px; border:1px solid #e2e8f0;">
+                    <div style="font-size:13px; color:#2563eb; font-weight:bold;">※ Crontab 스케줄러(sync_fw_audit.py)에 의해 10분 주기로 자동 감지된 내역입니다.</div>
+                    <div style="display:flex; gap:8px;">
+                        <input type="text" id="searchFirewallLog" class="search" placeholder="방화벽명, 내용 검색..." onkeyup="filterFirewallLog()">
+                        <button class="btn-blue" onclick="showTab('page-firewall', document.querySelector('a[onclick*=\'page-firewall\']'))" style="padding: 8px 15px; font-size: 13px;">🔄 화면 새로고침</button>
+                    </div>
+                </div>
+                <div class="table-container">
+                    <table id="firewallLogTable">
+                        <thead>
+                            <tr>
+                                <th style="width: 12%; text-align: center;">감지 일시</th>
+                                <th style="width: 13%;">방화벽명</th>
+                                <th style="width: 8%; text-align: center;">유형</th>
+                                <th style="width: 8%; text-align: center;">상태</th>
+                                <th style="width: 10%; text-align: center;">수정자</th>
+                                <th style="width: 12%; text-align: center;">마지막 수정일</th>
+                                <th style="width: 7%; text-align: center; color: #fbbf24;">규칙 순서</th>
+                                <th style="width: 8%; text-align: center; color: #fbbf24;">규칙 ID</th>
+                                <th style="width: 14%; text-align: center;">변경 내용</th>
+                                <th style="width: 8%; text-align: center;">Jira 티켓 번호</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $csvFile = '/opt/scp/fw_change_log.csv';
+                            $iamFile = '/opt/scp/iam_current.json';
+                            
+                            // IAM 매핑 테이블 구성
+                            $iamMap = [];
+                            if (file_exists($iamFile)) {
+                                $rawIam = json_decode(@file_get_contents($iamFile), true);
+                                $items = $rawIam['contents'] ?? $rawIam['users'] ?? $rawIam['items'] ?? (is_array($rawIam) ? $rawIam : []);
+                                foreach($items as $item) {
+                                    $uid = $item['userId'] ?? $item['user_id'] ?? $item['id'] ?? '';
+                                    $uname = $item['userName'] ?? $item['user_name'] ?? $item['name'] ?? '';
+                                    $email = $item['email'] ?? $item['userEmail'] ?? '';
+                                    if ($uid) {
+                                        $display = $uname;
+                                        if($email) $display .= " ({$email})";
+                                        $iamMap[$uid] = $display ?: $uid;
+                                    }
+                                }
+                            }
+
+                            if (file_exists($csvFile) && ($handle = fopen($csvFile, "r")) !== FALSE) {
+                                fgetcsv($handle); // 헤더 건너뛰기
+                                $logs = [];
+                                while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+                                    if(array_filter($data)) {
+                                        $logs[] = $data;
+                                    }
+                                }
+                                fclose($handle);
+                                
+                                $logs = array_reverse($logs);
+                                
+                                if (empty($logs)) {
+                                    echo "<tr><td colspan='10' style='text-align:center; padding:30px; color:#94a3b8;'>감지된 방화벽 변경 이력이 없습니다.</td></tr>";
+                                } else {
+                                    foreach ($logs as $data) {
+                                        // 💡 신규 포맷(10열) 대응
+                                        $hasNewFormat = (count($data) >= 10);
+                                        
+                                        $modifier = $data[4] ?? '-';
+                                        $finalModifier = $iamMap[$modifier] ?? $modifier;
+                                        
+                                        $modDate  = $data[5] ?? '-';
+                                        
+                                        // 새로 분리된 순서, ID, 내용 파싱
+                                        $seq      = $hasNewFormat ? $data[6] : '-';
+                                        $ruleId   = $hasNewFormat ? $data[7] : '-';
+                                        $content  = $hasNewFormat ? $data[8] : ($data[6] ?? '-');
+                                        
+                                        $jira     = $hasNewFormat ? $data[9] : ($data[7] ?? '');
+
+                                        $badgeClass = strpos($content, '삭제') !== false ? 'badge-bad' : 'badge-warn';
+                                        if (strpos($content, '신규') !== false || strpos($content, '추가') !== false) $badgeClass = 'badge-good';
+
+                                        echo "<tr>";
+                                        echo "<td style='text-align:center;'>" . htmlspecialchars($data[0] ?? '-') . "</td>";
+                                        echo "<td><strong>" . htmlspecialchars($data[1] ?? '-') . "</strong></td>";
+                                        echo "<td style='text-align:center;'>" . htmlspecialchars($data[2] ?? '-') . "</td>";
+                                        echo "<td style='text-align:center;'>" . htmlspecialchars($data[3] ?? '-') . "</td>";
+                                        echo "<td style='text-align:center; font-weight:bold; color:#d97706;'>" . htmlspecialchars($finalModifier) . "</td>";
+                                        echo "<td style='text-align:center;'>" . htmlspecialchars($modDate) . "</td>";
+                                        
+                                        // 💡 신규 컬럼 2개 추가된 부분 렌더링
+                                        echo "<td style='text-align:center; font-weight:bold; color:#0f172a;'>" . htmlspecialchars($seq) . "</td>";
+                                        echo "<td style='text-align:center; font-family:monospace; color:#475569;'>" . htmlspecialchars($ruleId) . "</td>";
+                                        
+                                        echo "<td style='text-align:left; font-size:12px; line-height:1.5;'><span class='{$badgeClass}'>" . htmlspecialchars($content) . "</span></td>";
+                                        echo "<td style='text-align:center; color:#2563eb; font-weight:bold;'>" . htmlspecialchars($jira) . "</td>";
+                                        echo "</tr>";
+                                    }
+                                }
+                            } else {
+                                echo "<tr><td colspan='10' style='text-align:center; padding:30px; color:#94a3b8;'>로그 파일을 찾을 수 없습니다. (스크립트 1회 이상 실행 필요)</td></tr>";
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 
@@ -1536,7 +1694,9 @@ function showTab(tabId, el) {
         'page-dbaas': '🗄️ DBaaS (MySQL) 관리',
         'page-iam': '🔑 IAM 권한 관리 (CLI 연동)',
         'page-sg': '🛡️ Security Group 규칙 조회 (CLI 연동)',
+        'page-fw-rules': '🔥 방화벽 규칙 실시간 조회 (CLI 연동)',
         'page-lb': '⚖️ Load Balancer 대상 및 리스너 현황',
+        'page-firewall': '🛡️ 방화벽 변경 이력',
         'page-jira': '🎫 Jira 요청 관리',
         'page-network': '🌐 통신 방화벽 확인',
         'page-security': '🛡️ 주요기반 취약점 진단 (KISA)',
@@ -1554,6 +1714,7 @@ function showTab(tabId, el) {
     if(tabId === 'page-iam' && (!window.cloudRawData || !window.cloudRawData['iam'])) loadCloudResource('iam', '#iamTable');
     if(tabId === 'page-sg' && (!window.cloudRawData || !window.cloudRawData['sg'])) loadCloudResource('sg', '#sgTable');
     if(tabId === 'page-lb' && (!window.cloudRawData || !window.cloudRawData['lb'])) loadCloudResource('lb', '#lbTable');
+    if(tabId === 'page-fw-rules' && (!window.cloudRawData || !window.cloudRawData['fw'])) loadCloudResource('fw', '#fwRulesTable'); 
 }
 
 async function loadCloudResource(type, tableId) {
@@ -1602,7 +1763,11 @@ async function loadCloudResource(type, tableId) {
 
                 if (type === 'sg' && key.toLowerCase() === 'rule_count') {
                     td.innerHTML = `<span style="cursor:pointer; color:#2563eb; font-weight:bold; text-decoration:underline;" onclick="openSgRules('${item.id}', '${item.name}')">🔍 규칙 보기 (${val}개)</span>`;
-                } else {
+                } 
+                else if (type === 'fw' && key.toUpperCase() === 'RULES') {
+                    td.innerHTML = `<span style="cursor:pointer; color:#2563eb; font-weight:bold; text-decoration:underline;" onclick="openFwRules('${item.ID}', '${item.NAME}')">🔍 상세 규칙 보기</span>`;
+                } 
+                else {
                     if (val === null || val === undefined) val = '-';
                     else if (typeof val === 'object') val = JSON.stringify(val);
                     td.innerText = val;
@@ -1623,6 +1788,81 @@ async function loadCloudResource(type, tableId) {
 
     } catch(e) {
         tbody.innerHTML = `<tr><td style="text-align:center; padding:30px; color:#dc2626;">❌ 데이터를 불러오지 못했습니다.</td></tr>`;
+    }
+}
+
+async function openFwRules(fwId, fwName) {
+    const modal = document.getElementById('metricsModal');
+    const modalTitle = document.getElementById('modalServerTitle');
+    const modalContent = document.getElementById('modalContent');
+    if (!modal || !modalTitle || !modalContent) return;
+
+    modalTitle.innerText = `🔥 방화벽 규칙 상세 - ${fwName}`;
+    modalContent.innerHTML = `<div style="text-align:center; padding:40px; font-weight:bold; color:#2563eb;">⏳ 방화벽 룰을 서버에서 실시간 조회 중입니다...</div>`;
+    modal.style.display = 'flex';
+
+    try {
+        const res = await fetch('index.php', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ ajax_action: 'get_fw_rules', fw_id: fwId })
+        });
+        const text = await res.text();
+        let data;
+
+        try {
+            data = JSON.parse(text);
+        } catch(e) {
+            modalContent.innerHTML = `<div style="text-align:left; padding:20px; color:#dc2626; background:#fee2e2; border-radius:8px; font-family:monospace; font-size:13px; white-space:pre-wrap; border:1px solid #f87171;"><b>❌ CLI 명령어 실행 에러:</b><br><br>${text}</div>`;
+            return;
+        }
+
+        if (data && !Array.isArray(data)) {
+            if (data.contents) data = data.contents;
+            else if (data.rules) data = data.rules;
+            else data = [data];
+        }
+
+        if (!data || data.length === 0) {
+            modalContent.innerHTML = `<div style="text-align:center; padding:30px; color:#94a3b8; font-weight:bold;">등록된 방화벽 규칙이 없거나 서버에서 빈 값을 반환했습니다.</div>`;
+            return;
+        }
+
+        let html = `<div class="table-container" style="max-height:450px; overflow-y:auto; border-radius:8px; border:1px solid #e2e8f0; margin-bottom:0;">`;
+        html += `<table style="width:100%; border-collapse:collapse; font-size:12px; white-space:nowrap;"><thead><tr>`;
+
+        const hiddenCols = ['id', 'firewall_id', 'created_by', 'modified_by', 'modified_at', 'account_id', 'createddt', 'modifieddt'];
+        const keys = Object.keys(data[0]).filter(k => !hiddenCols.includes(k.toLowerCase()));
+
+        keys.forEach(k => {
+            html += `<th style="background:#f8fafc; color:#334155; padding:12px; border-bottom:2px solid #cbd5e1; text-align:center; position:sticky; top:0; z-index:1;">${k.replace(/_/g, ' ').toUpperCase()}</th>`;
+        });
+        html += `</tr></thead><tbody>`;
+
+        data.forEach(rule => {
+            html += `<tr style="border-bottom:1px solid #f1f5f9; transition:background 0.2s;" onmouseover="this.style.background='#f8fafc'" onmouseout="this.style.background='transparent'">`;
+            keys.forEach(k => {
+                let v = rule[k];
+                if (typeof v === 'object') v = JSON.stringify(v);
+
+                if (k.toLowerCase().includes('action')) {
+                    if (String(v).toLowerCase().includes('allow')) v = `<span class="badge-good">허용 (ALLOW)</span>`;
+                    else if (String(v).toLowerCase().includes('drop')) v = `<span class="badge-bad">차단 (DROP)</span>`;
+                }
+                if (k.toLowerCase().includes('direction')) {
+                    if (String(v).toLowerCase() === 'in' || String(v).toLowerCase() === 'ingress') v = `<span style="color:#2563eb; font-weight:bold;">📥 INBOUND</span>`;
+                    else if (String(v).toLowerCase() === 'out' || String(v).toLowerCase() === 'egress') v = `<span style="color:#d97706; font-weight:bold;">📤 OUTBOUND</span>`;
+                }
+
+                html += `<td style="padding:10px 12px; text-align:center; color:#475569;">${v || '-'}</td>`;
+            });
+            html += `</tr>`;
+        });
+        html += `</tbody></table></div>`;
+        modalContent.innerHTML = html;
+
+    } catch (e) {
+        modalContent.innerHTML = `<div style="text-align:center; padding:30px; color:#dc2626;">❌ 서버 통신 중 오류가 발생했습니다.<br>${e}</div>`;
     }
 }
 
@@ -1764,7 +2004,11 @@ function applyCloudFilter(type, tableId, inputId, selectId = null) {
 
             if (type === 'sg' && key.toLowerCase() === 'rule_count') {
                 td.innerHTML = `<span style="cursor:pointer; color:#2563eb; font-weight:bold; text-decoration:underline;" onclick="openSgRules('${item.id}', '${item.name}')">🔍 규칙 보기 (${val}개)</span>`;
-            } else {
+            } 
+            else if (type === 'fw' && key.toUpperCase() === 'RULES') {
+                td.innerHTML = `<span style="cursor:pointer; color:#2563eb; font-weight:bold; text-decoration:underline;" onclick="openFwRules('${item.ID}', '${item.NAME}')">🔍 상세 규칙 보기</span>`;
+            }
+            else {
                 if (val === null || val === undefined) val = '-';
                 else if (typeof val === 'object') val = JSON.stringify(val);
                 td.innerText = val;
@@ -1923,6 +2167,13 @@ function filterAlerts() {
     });
 }
 
+function filterFirewallLog() {
+    let keyword = document.getElementById("searchFirewallLog").value.toLowerCase();
+    document.querySelectorAll("#firewallLogTable tbody tr").forEach(row => {
+        row.style.display = row.innerText.toLowerCase().includes(keyword) ? "" : "none";
+    });
+}
+
 function applyStorageFilter() {
     let keyword = document.getElementById('searchStorage').value.toLowerCase();
     document.querySelectorAll('#storageTable tbody tr').forEach(function(row){
@@ -2042,7 +2293,7 @@ async function searchGlobalLogs() {
     if(selectedIps.length === 0) return alert("대상 서버를 선택해 주세요.");
     if(logPath.trim() === "" || logKeyword.trim() === "") return alert("경로와 키워드를 입력해 주세요.");
 
-    const cmd = `if [ -f ${logPath.replace(/'/g,"")} ]; then sudo grep -in "${logKeyword.replace(/'/g,"")}" ${logPath.replace(/'/g,"")} | tail -n 30 || echo "✅ 해당 키워드가 포함된 로그가 없습니다."; else echo "❌ 파일을 찾을 수 없습니다: ${logPath.replace(/'/g,"")}"; fi`;
+    const cmd = `if [ -f ${logPath.replace(/'/g,"")} ]; then sudo grep -in "${logKeyword.replace(/'/g,"")}" ${logPath.replace(/'/g,"")} | tail -n 30 || echo "✅ 해당 키워드가 포함된 로그가 없습니다."; else echo "❌ 파일을 찾을 수 무 없습니다: ${logPath.replace(/'/g,"")}"; fi`;
 
     resultBox.style.display = 'block';
     resultBox.innerText = `[🔍 통합 로그 검색 중...] ⏳`;
@@ -2335,7 +2586,7 @@ function initJiraTab() {
             opt.innerText = m;
             select.appendChild(opt);
         });
-        
+
         let currentYM = new Date().toISOString().slice(0, 7);
         if (monthsArr.includes(currentYM)) {
             select.value = currentYM;
@@ -2343,7 +2594,7 @@ function initJiraTab() {
             select.value = monthsArr[0];
         }
     }
-    
+
     renderJiraTable();
 }
 
@@ -2384,7 +2635,7 @@ function renderJiraTable() {
             <td style="text-align:center; vertical-align:middle; color:#475569;">${ev.date}</td>
             <td style="text-align:center; vertical-align:middle;">${ticketDisplay}</td>
             <td style="text-align:center; vertical-align:middle;">
-                <button onclick="registerJiraTicket('${ev.name}', '${ev.type}', '${ev.date}', '${ev.ticket || ''}')" 
+                <button onclick="registerJiraTicket('${ev.name}', '${ev.type}', '${ev.date}', '${ev.ticket || ''}')"
                         style="background:${btnColor}; color:white; border:none; padding:6px 12px; border-radius:6px; font-size:12px; font-weight:bold; cursor:pointer;">
                     ${btnText}
                 </button>
@@ -2400,7 +2651,6 @@ async function loadDbaasData() {
     if(!tbody) return;
     tbody.innerHTML = `<tr><td colspan="6" style="text-align:center; padding:30px; color:#2563eb;"><strong>⏳ 데이터를 불러오는 중입니다...</strong></td></tr>`;
     try {
-        // 백그라운드 파이썬 스크립트가 생성한 json을 직접 읽어옵니다 (캐시 방지용 쿼리 파라미터 추가)
         const res = await fetch('mysql_dashboard_data.json?t=' + new Date().getTime());
         if(!res.ok) throw new Error('파일을 찾을 수 없습니다.');
         const data = await res.json();

@@ -10387,5 +10387,809 @@
     "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
     "event_time": "2026-10-30T14:05:01Z",
     "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.143",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:25Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "013a49c4-4796-424b-8431-8cd46f9788f6",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:55Z",
+    "name": "mongo-test-12",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "e8f4f9f0-9b2e-4778-9823-014b33d78c91"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.198",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:25Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "11fe203a-48bc-4453-b233-96d2d0bafe6f",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:55Z",
+    "name": "mongo-test-11",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "fac5045b-3393-41ab-aa80-223f77a941ce"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.130",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:24Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "39233456-2383-4768-9310-96b6feb3f26e",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:15Z",
+    "name": "mongo-test-9",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "5a4efee7-1d36-46f5-979c-7de35cb66c62"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.192",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:24Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "52477c6f-29d8-4f7d-a501-062dc70275c2",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:57Z",
+    "name": "mongo-test-10",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "4d61ca3e-63f7-44b7-ab1b-27c35c2e77df"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.89",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:24Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "547af40e-6a46-4c3b-b208-80cb3e5ea117",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:54Z",
+    "name": "mongo-test-6",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "cde8aed1-26f8-4caf-ab5f-183858436b20"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.211",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:24Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "76980298-28d8-4cc4-863a-aa956cb6840d",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:54Z",
+    "name": "mongo-test-7",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "c3929cc0-8c93-4ff7-ad00-782140c5142d"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.59",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:24Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "b1f427e5-7589-452a-8107-58ac39cbcef9",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:14Z",
+    "name": "mongo-test-8",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "0d00291f-205c-4ec7-882e-29e5d2de04e7"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.54",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:23Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "146a88b2-ea1c-4cc5-a7a3-e9ea3128aaf0",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:12Z",
+    "name": "mongo-test-5",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "7affc218-94e6-44cd-a5f3-c0f2d675a00f"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.226",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:23Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "89a3f512-84b2-40cb-a854-6aa69dd93b6e",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:14Z",
+    "name": "mongo-test-4",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "51b93465-c811-4ab6-976f-3501ceb7e698"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.148",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:23Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "8a82f471-9fb0-4f07-92b3-10c86e8e5c31",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:12Z",
+    "name": "mongo-test-2",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "bbd7cce4-29b9-42ef-9f57-270ff856acc7"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.90",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:23Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "b7e53845-49d1-41ae-a7d3-0a115765c02f",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:03:54Z",
+    "name": "mongo-test-1",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "8fb20815-b4db-4b2f-9f98-df827e5e426b"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
+  },
+  {
+    "account_id": "9385572a5f534b8590f6c9c0c9eb408a",
+    "addresses": [
+      {
+        "ip_addresses": [
+          {
+            "ip_address": "172.16.116.156",
+            "version": 4
+          }
+        ],
+        "subnet_name": "pribetadbsub01"
+      }
+    ],
+    "auto_scaling_group_id": null,
+    "created_at": "2026-11-02T00:03:23Z",
+    "created_by": "db578222145a4a33ac15c49165f98e6d",
+    "disk_config": "MANUAL",
+    "id": "bd92af20-146b-4713-ad1f-3e2141a6c426",
+    "image_id": "99642f10-178a-4f2c-9db9-48484965429a",
+    "is_marketplace": false,
+    "keypair_name": "works_mgmt",
+    "launch_configuration_id": null,
+    "locked": false,
+    "metadata": {
+      "HA_Enabled": "True"
+    },
+    "modified_at": "2026-11-02T00:04:14Z",
+    "name": "mongo-test-3",
+    "partition_number": null,
+    "planned_compute_os_type": "open_source",
+    "product_category": "compute",
+    "product_offering": "virtual_server",
+    "security_groups": [
+      {
+        "name": "naver-beta-comm-sg-01"
+      },
+      {
+        "name": "bt-pri-mongo"
+      }
+    ],
+    "server_group_id": null,
+    "server_type": {
+      "disk": 0,
+      "ephemeral": 0,
+      "extra_specs": {
+        "hw:cpu_sockets": "1",
+        "hw:cpu_threads": "2",
+        "hw:vif_multiqueue_enabled": "true",
+        "scp_compute_class_type": "Standard-1"
+      },
+      "id": "s1v8m16",
+      "name": "s1v8m16",
+      "ram": 16,
+      "swap": 0,
+      "vcpus": 8
+    },
+    "state": "ACTIVE",
+    "volumes": [
+      {
+        "delete_on_termination": true,
+        "id": "9b68fceb-68c2-442e-bb2f-3c19695939f2"
+      }
+    ],
+    "vpc_id": "66ca9522561d42f799fceb7cd4b2dfa9",
+    "event_time": "2026-11-02T09:35:01Z",
+    "status": "생성"
   }
 ]

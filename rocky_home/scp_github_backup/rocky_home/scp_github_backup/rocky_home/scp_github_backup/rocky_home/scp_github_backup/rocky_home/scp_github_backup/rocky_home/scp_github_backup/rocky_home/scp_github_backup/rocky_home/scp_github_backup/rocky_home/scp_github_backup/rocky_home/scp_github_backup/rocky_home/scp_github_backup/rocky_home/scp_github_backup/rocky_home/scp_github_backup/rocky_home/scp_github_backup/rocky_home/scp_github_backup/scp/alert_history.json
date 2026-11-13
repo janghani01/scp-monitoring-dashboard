@@ -1,5 +1,77 @@
 [
   {
+    "time": "2026-11-01 20:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 97.0%"
+  },
+  {
+    "time": "2026-11-01 17:51:02",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 83.0%"
+  },
+  {
+    "time": "2026-11-01 16:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 89.0%"
+  },
+  {
+    "time": "2026-11-01 14:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 82.0%"
+  },
+  {
+    "time": "2026-11-01 12:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
+    "time": "2026-11-01 09:51:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 84.0%"
+  },
+  {
+    "time": "2026-11-01 08:49:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 93.0%"
+  },
+  {
+    "time": "2026-11-01 08:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 95.0%"
+  },
+  {
+    "time": "2026-11-01 04:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 98.0%"
+  },
+  {
+    "time": "2026-11-01 02:49:01",
+    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 99.0%"
+  },
+  {
+    "time": "2026-11-01 02:00:01",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 80.0%"
+  },
+  {
+    "time": "2026-11-01 00:00:02",
+    "server": "Unknown (172.16.118.63)",
+    "type": "CPU 과부하",
+    "message": "현재 CPU 96.0%"
+  },
+  {
     "time": "2026-10-31 20:54:01",
     "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
     "type": "CPU 과부하",
@@ -2926,77 +2998,5 @@
     "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
     "type": "CPU 과부하",
     "message": "현재 CPU 89.0%"
-  },
-  {
-    "time": "2026-09-22 20:53:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 89.0%"
-  },
-  {
-    "time": "2026-09-22 20:51:02",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 88.0%"
-  },
-  {
-    "time": "2026-09-22 17:53:02",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 80.0%"
-  },
-  {
-    "time": "2026-09-22 15:15:02",
-    "server": "test-mgmt-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 87.0%"
-  },
-  {
-    "time": "2026-09-22 15:13:01",
-    "server": "test-mgmt-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 90.0%"
-  },
-  {
-    "time": "2026-09-22 15:12:01",
-    "server": "test-mgmt-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 88.0%"
-  },
-  {
-    "time": "2026-09-22 15:10:01",
-    "server": "test-mgmt-01 (172.16.118.63)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 93.0%"
-  },
-  {
-    "time": "2026-09-22 14:51:01",
-    "server": "beta-pri-cpp-sv-01 (172.16.118.5)",
-    "type": "CPU 과부하",
-    "message": "현재 CPU 90.0%"
-  },
-  {
-    "time": "2026-09-22 05:40:01",
-    "server": "SCP Cloud (LB)",
-    "type": "LB 변경",
-    "message": "LB 리소스 개수 변동 감지 (기존: 125개 → 현재: 123개 / 삭제됨 (-2))"
-  },
-  {
-    "time": "2026-09-22 05:30:02",
-    "server": "SCP Cloud (LB)",
-    "type": "LB 변경",
-    "message": "LB 리소스 개수 변동 감지 (기존: 123개 → 현재: 125개 / 추가됨 (+2))"
-  },
-  {
-    "time": "2026-09-22 14:03:01",
-    "server": "test-mgmt-01 (172.16.118.63)",
-    "type": "재부팅",
-    "message": "업타임 초기화 감지 (이전 3457432초 -> 현재 63초)"
-  },
-  {
-    "time": "2026-09-22 14:02:38",
-    "server": "172.16.118.63",
-    "type": "재부팅",
-    "message": "중앙 관리서버(test-mgmt-01) 시스템 재부팅 완료"
   }
 ]

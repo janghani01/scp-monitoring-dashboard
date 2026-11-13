@@ -246,7 +246,7 @@
         "cluster_name": "mzirtest",
         "vip": "172.16.116.254",
         "port": 13306,
-        "spec": "db1v4m8",
+        "spec": "db1v4m16",
         "cluster_state": "RUNNING",
         "nodes": [
             {
